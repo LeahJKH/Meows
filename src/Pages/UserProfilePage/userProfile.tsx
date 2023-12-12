@@ -1,9 +1,9 @@
-import "./userProfile.module.css"
+import styles from "./userProfile.module.css"
 
 export function UserProfile(){
   
   return(
-    <div>
+    <div className={styles.profileContainer}>
 
       <h1>User Profile</h1>
 
