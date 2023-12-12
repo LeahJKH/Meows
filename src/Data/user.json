@@ -1,21 +1,22 @@
 {
-    "0": {
-"name": "kristina",
-"email": "Kristina@meow.org",
-"password": "meow",
-"Gender": "Female"
-    },
-
-    "1": {
-"name": "Leah",
-"email": "Leah@meow.org",
-"password": "dobbelmeow",
-"Gender": "Female"
-    },
-    "2": {
+    "users": [
+      {
+        "name": "kristina",
+        "email": "Kristina@meow.org",
+        "password": "meow",
+        "Gender": "Female"
+      },
+      {
+        "name": "Leah",
+        "email": "Leah@meow.org",
+        "password": "dobbelmeow",
+        "Gender": "Female"
+      },
+      {
         "name": "Admin",
         "email": "admin@meow.org",
         "password": "Admin",
         "Gender": "None"
-            }
-}
+      }
+    ]
+  }
