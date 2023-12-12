@@ -3,11 +3,15 @@ import userData from  "../../Data/user.json"
 import { useState } from "react"
 
 export default function Login() {
-    
+    const [barvalue, barempty] = usestate("")
     function checkIfUser() {
+    if (barvalue != "") {
         for (let i = 0; i <= 10; i++) {
-            userData
+            userData = barvalue
         }
+    } else {
+        console.log("im empty")
+    }
     }
     return (
         <>
