@@ -1,9 +1,9 @@
-import "./discoverPage.module.css"
+import styles from "./discoverPage.module.css"
 
 export function Discover(){
   
   return(
-    <div>
+    <div className={styles.discoverContainer}>
 
       <h1>Discover</h1>
 
