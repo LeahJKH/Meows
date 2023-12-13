@@ -4,9 +4,13 @@ import { PostInfo } from "../../Data/posts";
 
 export function UserProfile() {
   return (
-    <div className={styles.profilePageContainer}>
-      <div>
-        <div className={styles.profileImage}></div>
+    <div className={styles.wholeUserProfile}>
+      <div className={styles.profilePageContainer}>
+        <img
+          className={styles.profileImage}
+          src="public/Alicia.jpg"
+          alt="Pretty Alien makeup look"
+        />
         <h2>Name/Gender</h2>
         <p>Bio---------------</p>
       </div>

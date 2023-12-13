@@ -1,0 +1,23 @@
+.postCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+}
+
+.postCard {
+  border-radius: 23px;
+  border: 1px solid rgba(2, 62, 138, 0.5);
+  background: #f5f5ff;
+  box-shadow: 0px 4px 4px 1px #e2eafc;
+  width: 60rem;
+}
+
+.postFooter {
+  width: 60rem;
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 23px 23px;
+}
