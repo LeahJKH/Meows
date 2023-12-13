@@ -3,14 +3,14 @@ import userData from "../../Data/user.json";
 import { useState } from "react";
 
 export default function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [loginError, setLoginError] = useState(false);
+  const [email, setEmail] = useState(""); //this sets the email
+  const [password, setPassword] = useState("");//this sets the password
+  const [loginError, setLoginError] = useState(false); //this sets the error you will get
 
   function checkIfUser() {
-    if (email !== "" && password !== "") {
-      for (const user of userData.users) {
-        if (user.email === email && user.password === password) {
+    if (email !== "" && password !== "") {//this checks if email and password fields are empty
+      for (const user of userData.users) {//this goes through all the exsisting users 
+        if (user.email === email && user.password === password) {//this checks if you have entered an exsisting user
           console.log("Logged in as:", user.name);
           setLoginError(false);
           return;
@@ -45,7 +45,7 @@ export default function Login() {
           <button className={style.loginbtn} onClick={checkIfUser}>
             Log In
           </button>
-          {loginError && <p>Incorrect email or password</p>}
+          {loginError && <p>Incorrect email or password</p>} {/* this will make an object if loginError is true */}
         </div>
 
         <div className={style.nonusercontainer}>
