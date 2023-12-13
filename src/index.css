@@ -3,4 +3,6 @@ body {
   padding: 0;
   box-sizing: border-box;
  width: 100vh;
+ background-color: #EDF2FB;
+ background-image: url("../public/images/paws.png");
 }
