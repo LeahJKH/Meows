@@ -1,7 +1,9 @@
 import { useState } from "react";
 import PostCard from "../Components/PostCard/Postcard.tsx";
 import Searchbar from "../Components/srcbar/SrcBar";
-import { PostInfo } from "../Data/posts.ts";
+import {PostInfo}  from "../Data/posts.ts";
+import Signup from "../Components/Signup/Signup.tsx";
+
 
 export function LandingPage() {
   const [searchTerm, setSearchTerm] = useState<string>("");
@@ -12,6 +14,7 @@ export function LandingPage() {
 
   return (
     <main>
+
       <Searchbar setSearchTerm={setSearchTerm}></Searchbar>
       {filteredPosts.map(
         (post: { id: number; title: string; content: string }) => (
