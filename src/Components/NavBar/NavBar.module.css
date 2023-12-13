@@ -1,4 +1,29 @@
 .navBar {
   background-color: #abc4ff;
   width: 100vw;
+  padding: 1vh;
+}
+
+.leftNav {
+  display: flex;
+  align-items: center;
+}
+
+.rightNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background: transparent;
+  border-radius: 40px;
+  border: 2px solid #023e8a;
+  color: rgba(48, 90, 167, 0.8);
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.38px;
 }
