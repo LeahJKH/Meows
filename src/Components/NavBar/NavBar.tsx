@@ -2,7 +2,6 @@ import MeowsLogo from "../../assets/MeowsLogo";
 import styles from "./NavBar.module.css";
 import MoonSvg from "../../assets/Icons/Moon";
 import SunSvg from "../../assets/Icons/Sun";
-import Searchbar from "../srcbar/SrcBar";
 import LogoutSvg from "../../assets/Icons/Logout";
 
 export default function NavBar() {

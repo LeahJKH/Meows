@@ -2,17 +2,19 @@
   background-color: #abc4ff;
   width: 100vw;
   padding: 1vh;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
 .leftNav {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
 .rightNav {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
+  margin-right: 3vw;
 }
 
 button {
@@ -26,4 +28,6 @@ button {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.38px;
+  width: 9vw;
+  margin-right: 0.3vw;
 }
