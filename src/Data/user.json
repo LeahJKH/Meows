@@ -4,21 +4,32 @@
       "email": "Kristina@meow.org",
       "password": "Meowformebbg",
       "Gender": "Female",
-      "Birthday": "03,03,01"
+      "Birthday": "03,03,01",
+      "posts": [1, 14, 20]
     },
     {
       "name": "Leah",
       "email": "Leah@meow.org",
       "password": "dobbelmeow",
       "Gender": "Female",
-      "Birthday": "23,02,03"
+      "Birthday": "23,02,03",
+      "posts": [2, 5, 8]
     },
     {
       "name": "Admin",
       "email": "admin@meow.org",
       "password": "Admin",
       "Gender": "None",
-      "Birthday": "01,01,01"
-    }
+      "Birthday": "01,01,01",
+      "posts": [3, 4, 16, 21]
+    },
+    {
+        "name": "Kai",
+        "email": "kai.kodehode@gmail.com",
+        "password": "Kodehode#23",
+        "Gender": "Male",
+        "Birthday": "31,03,85"
+        
+      }
   ]
   
