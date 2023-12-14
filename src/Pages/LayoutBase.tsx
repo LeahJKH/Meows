@@ -1,7 +1,8 @@
 // import { Outlet } from "react-router-dom";
 import NavBar from "../Components/NavBar/NavBar";
 import Footer from "../Components/Footer/Footer";
-import { UserProfile } from "./UserProfilePage/userProfile";
+
+import { Outlet } from "react-router-dom";
 
 export function LayoutBase() {
   return (
@@ -9,7 +10,7 @@ export function LayoutBase() {
       <NavBar />
 
       <div>
-        <UserProfile />
+        <Outlet />
       </div>
 
       <Footer />

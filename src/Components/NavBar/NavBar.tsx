@@ -4,7 +4,9 @@ import MoonSvg from "../../assets/Icons/Moon";
 import SunSvg from "../../assets/Icons/Sun";
 import LogoutSvg from "../../assets/Icons/Logout";
 
-export default function NavBar() {
+import Searchbar from "../srcbar/SrcBar";
+
+export default function NavBar({ setSearchTerm }) {
   return (
     <>
       <nav className={styles.navBar}>
@@ -14,7 +16,7 @@ export default function NavBar() {
           <SunSvg />
         </div>
         <div className={styles.rightNav}>
-          <button>Search.....</button>
+          <Searchbar setSearchTerm={setSearchTerm} />
           <LogoutSvg />
         </div>
       </nav>
