@@ -1,4 +1,4 @@
-import { useState, ChangeEvent } from "react";
+import { useState, useEffect, ChangeEvent } from "react";
 import PostCard from "../../Components/PostCard/Postcard";
 import styles from "./userProfile.module.css";
 import { PostInfo } from "../../Data/posts";
@@ -7,7 +7,10 @@ import MoreSvg from "../../assets/Icons/More";
 
 export function UserProfile() {
   // State for the bio content
-  const [bio, setBio] = useState("Your default bio here");
+  const [bio, setBio] = useState(() => {
+    const storedBio = localStorage.getItem("userBio");
+    return storedBio || "Fill in bio";
+  });
   // State to track whether the bio is in edit mode
   const [isEditingBio, setIsEditingBio] = useState(false);
 
@@ -20,6 +23,10 @@ export function UserProfile() {
   const handleEditClick = () => {
     setIsEditingBio(!isEditingBio);
   };
+
+  useEffect(() => {
+    localStorage.setItem("userBio", bio);
+  }, [bio]);
 
   return (
     <div className={styles.wholeUserProfile}>
