@@ -1,6 +1,45 @@
+.topside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.topside > div {
+ margin: 0 15px;
+}
 
-.boxes{
-  width: 500px;
-  height: 300px;
-  background-color: gray;
+.MeowContainer {
+  height: 400px;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #F5F5FF;
+  border: 0.5px solid #023e8a; 
+  border-radius: 20px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #023e8a; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #02316e; 
+}
+
+.HashS {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+}
+.HashS > p {
+  margin-left: 10px;
 }
