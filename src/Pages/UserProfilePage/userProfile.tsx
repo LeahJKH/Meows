@@ -31,6 +31,7 @@ export function UserProfile() {
   return (
     <div className={styles.wholeUserProfile}>
       <div className={styles.profilePageContainer}>
+        <h2>@USERNAME</h2>
         <div className={styles.icons}>
           {/* Conditionally render the EditSvg or SaveSvg based on edit mode */}
           {isEditingBio ? (
