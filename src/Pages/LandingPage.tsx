@@ -19,7 +19,7 @@ export function LandingPage() {
       <div className={styles.feedLeftContainer}>
         <div className={styles.userContainer}>
           <div className={styles.imageNameContainer}>
-            <img src="/images/userimage.png" alt="image" />
+            <img src="public/Alicia.jpg" alt="image" />
             <div>
               <p className={styles.userMail}>@intergalacticBaddie</p>
               <h2 className={styles.userName}>Alicia</h2>
@@ -32,15 +32,15 @@ export function LandingPage() {
         </div>
 
         <div className={styles.navContainer}>
-          <img className={styles.catImage} src="/images/cat.svg" alt="cat" />
+          <img className={styles.catImage} src="/cat.svg" alt="cat" />
           <ul className={styles.navLinkContainer}>
-            <li><img src="/images/house.svg" alt="house" />Home</li>
-            <li><img src="/images/hashtag.svg" alt="hashtag" />Explore</li>
+            <li><img src="public/house.svg" alt="house" />Home</li>
+            <li><img src="public/hashtag.svg" alt="hashtag" />Explore</li>
             <li>Natifications</li>
             <li>Messages</li>
             <li>Bookmarks</li>
-            <li><img src="/images/image-11.png" alt="image" /> Profile</li>
-            <li><img src="/images/circle.svg" alt="circle" /> More</li>
+            <li><img src="public/image-11.png" alt="image" /> Profile</li>
+            <li><img src="public/circle.svg" alt="circle" /> More</li>
           </ul>
           <button className={styles.meowButton}>Meow</button>
         </div>
