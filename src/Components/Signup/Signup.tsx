@@ -25,7 +25,7 @@ export default function Signup() {
       password: password,
       Gender: gender,
       Birthday: birthday,
-    };
+    };// this is the setup for a new user so it uses less code too save a user
 
     if (name && email && password) {
       const updatedUsers = [...users, newUser];
@@ -35,12 +35,12 @@ export default function Signup() {
     } else {
       console.log('Name, email, and password are required fields.');
     }
-  };
+  }; //this either creates a new user or throws an error depending if all the conditions are met
 
     const formatDate = (dateString: string) => {
         const [date, month, year] = dateString.split(',');
         return `${year}-${month}-${date}`; 
-    };
+    }; // this is just a format so i get date then month then year
 
 
 
@@ -52,11 +52,10 @@ export default function Signup() {
                 <input type="password" name="PassSignup" onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
                 <input type="text" name="Birthday" onChange={(e) => setBirthday(formatDate(e.target.value))} placeholder="Birthday (DD,MM,YYYY)" />
                 <select name="gender" onChange={(e) => setGender(e.target.value)}>
-                <option value="None">None</option>
+                    <option value="None">None</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                     <option value="Nonbinary">Nonbinary</option>
-                    
                     <option value="Dont wish too enter">Dont wish to enter</option>
                 </select>
                 <button className={style.signupbtn} onClick={handleSignup}>sign up</button>
