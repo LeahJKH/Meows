@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Postcard.module.css"
 
 type PostCardProps = {
   title: string;
@@ -7,7 +8,7 @@ type PostCardProps = {
 
 const PostCard: React.FC<PostCardProps> = ({ title, content }) => {
   return (
-    <div className="post-card">
+    <div className={styles.postCard}>
       <h2>{title}</h2>
       <p>{content}</p>
     </div>
