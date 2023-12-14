@@ -1,0 +1,11 @@
+footer {
+  background-color: #abc4ff;
+  width: 100vw;
+  height: 10rem;
+  margin: 0;
+  padding: 0;
+}
+
+.pFooter {
+  font-weight: 600;
+}
