@@ -42,3 +42,8 @@
   display: flex;
   margin-left: 100%;
 }
+
+button {
+  width: 4em;
+  font-weight: 600;
+}
