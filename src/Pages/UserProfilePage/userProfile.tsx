@@ -5,7 +5,7 @@ import { PostInfo } from "../../Data/posts";
 
 export function UserProfile() {
   // State for the bio content
-  const [bio, setBio] = useState("Bio---------------");
+  const [bio, setBio] = useState("");
 
   // Handler for updating the bio
   const handleBioChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
