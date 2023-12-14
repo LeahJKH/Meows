@@ -3,6 +3,7 @@ import styles from "./Postcard.module.css";
 import HeartSvg from "../../assets/Icons/Heart";
 import SavedSvg from "../../assets/Icons/Saved";
 
+
 type PostCardProps = {
   title: string;
   content: string;
@@ -10,6 +11,7 @@ type PostCardProps = {
 
 const PostCard: React.FC<PostCardProps> = ({ title, content }) => {
   return (
+
     <div className={styles.postCardContainer}>
       <div className={styles.postCard}>
         <img
