@@ -41,7 +41,7 @@ export function LandingPage() {
             <li className={styles.withoutIcon}>Natifications</li>
             <li className={styles.withoutIcon}>Messages</li>
             <li className={styles.withoutIcon}>Bookmarks</li>
-            <li><Link className={styles.linkDecoration} to={"/userprofile"}><img className={styles.linkImage} src="public/Alicia.jpg" alt="image" /> Profile</Link></li>
+            <li><Link className={styles.linkDecoration} to={"/userprofile"}><img className={styles.linkImage} src="public/image.png" alt="image" /> Profile</Link></li>
             <li><img className={styles.linkImage} src="public/circle.svg" alt="circle" /> More</li>
           </ul>
           <button className={styles.meowButton}>Meow</button>
