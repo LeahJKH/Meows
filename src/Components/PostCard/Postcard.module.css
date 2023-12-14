@@ -1,4 +1,3 @@
-
 .postCardContainer {
   display: flex;
   justify-content: center;
@@ -11,15 +10,14 @@
   border: 1px solid rgba(2, 62, 138, 0.5);
   background: #f5f5ff;
   box-shadow: 0px 4px 4px 1px #e2eafc;
-  width: 60rem;
+  width: 60em;
 }
 
 .postFooter {
-  width: 60rem;
+  width: 60em;
   height: 3vh;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 0 0 23px 23px;
 }
-
