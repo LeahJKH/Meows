@@ -181,5 +181,41 @@
   gap: 16px;
 }
 
+.feedRightContainer input{
+width: 15vw;
+height: 40px;
+border-radius: 100px;
+border: none;
+background: #E7ECF0;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 16px;
+}
+
+.feedTitleIconContainer{
+  display: flex;
+  gap: 5vw;
+}
+
+.trendsContainer{
+  display: flex;
+  padding: 14px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  background: #F5F5FF;
+}
+
+.trendingAndIcon{
+  display: flex;
+  gap: 5vw;
+}
+
+.trendBoks{
+  
+}
+
 
 
