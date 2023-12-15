@@ -35,7 +35,9 @@ export function UserProfile() {
         <div className={styles.icons}>
           {/* Conditionally render the EditSvg or SaveSvg based on edit mode */}
           {isEditingBio ? (
-            <button onClick={handleEditClick}>Save</button>
+            <button className={styles.saveButton} onClick={handleEditClick}>
+              Save
+            </button>
           ) : (
             <EditSvg onClick={handleEditClick} />
           )}
