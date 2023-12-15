@@ -4,6 +4,8 @@ import PostCard from "../Components/PostCard/Postcard.tsx";
 import { PostInfo } from "../Data/posts.ts";
 import styles from "./LandingPage.module.css";
 import { Link } from "react-router-dom";
+import { useTheme } from '../ThemeContext';
+import { useState, useEffect } from "react";
 
 export function LandingPage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -16,6 +18,17 @@ export function LandingPage() {
       setSearchTerm={setSearchTerm as Dispatch<SetStateAction<string>>}
     />;
   }
+  const { darkMode } = useTheme();
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark-mode-body');
+    } else {
+      document.body.classList.remove('dark-mode-body');
+    }
+    return () => {
+      document.body.classList.remove('dark-mode-body');
+    };
+  }, [darkMode]);
   return (
     <main className={styles.feedContainer}>
       <div className={styles.feedLeftContainer}>
