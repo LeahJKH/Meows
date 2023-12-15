@@ -2,10 +2,13 @@ import { useState, useEffect, ChangeEvent } from "react";
 import PostCard from "../../Components/PostCard/Postcard";
 import styles from "./userProfile.module.css";
 import { PostInfo } from "../../Data/posts";
+import { useTheme } from '../../ThemeContext';
 import EditSvg from "../../assets/Icons/Edit";
 import MoreSvg from "../../assets/Icons/More";
 
 export function UserProfile() {
+  const { darkMode } = useTheme();
+
   // State for the bio content
   const [bio, setBio] = useState(() => {
     const storedBio = localStorage.getItem("userBio");
@@ -28,12 +31,27 @@ export function UserProfile() {
     localStorage.setItem("userBio", bio);
   }, [bio]);
 
+  const containerClass = darkMode ? styles.profilePageContainerdark : styles.profilePageContainer;
+  const imageClass = darkMode ? styles.profileImagedark : styles.profileImage;
+  const headerClass = darkMode ? styles.userActivityHeaderdark : styles.userActivityHeader;
+  const wholeUserProfileClass = darkMode ? styles.wholeUserProfiledark : styles.wholeUserProfile;
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark-mode-body');
+    } else {
+      document.body.classList.remove('dark-mode-body');
+    }
+    return () => {
+      document.body.classList.remove('dark-mode-body');
+    };
+  }, [darkMode]);
+
   return (
-    <div className={styles.wholeUserProfile}>
-      <div className={styles.profilePageContainer}>
+    <div className={wholeUserProfileClass}>
+      <div className={containerClass}>
         <h2>@USERNAME</h2>
         <div className={styles.icons}>
-          {/* Conditionally render the EditSvg or SaveSvg based on edit mode */}
+         
           {isEditingBio ? (
             <button onClick={handleEditClick}>Save</button>
           ) : (
@@ -42,7 +60,7 @@ export function UserProfile() {
           <MoreSvg />
         </div>
         <img
-          className={styles.profileImage}
+          className={imageClass}
           src="public/Alicia.jpg"
           alt="Pretty Alien makeup look"
         />
@@ -58,7 +76,7 @@ export function UserProfile() {
           <div className={styles.bioText}>{bio}</div>
         )}
       </div>
-      <div className={styles.userActivityHeader}>
+      <div className={headerClass}>
         <h1>YOUR ACTIVITY</h1>
       </div>
       <div className={styles.userActivityFeed}>
@@ -66,6 +84,8 @@ export function UserProfile() {
           key={PostInfo[1].id}
           title={PostInfo[1].title}
           content={PostInfo[1].content}
+          username=""
+          nickname=""
         />
       </div>
     </div>

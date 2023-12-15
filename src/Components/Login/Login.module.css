@@ -29,5 +29,53 @@
 }
 
 .signupbtn {
-  margin: 0;
+    background: transparent;
+  border-radius: 40px;
+  border: 2px solid #023e8a;
+  color: rgba(48, 90, 167, 0.8);
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.38px;
+  width: 9vw;
+  margin-right: 0.3vw;
 }
+
+/*!DARKMODE!*/
+.logincontainerdark {
+    background-color: #5E646E;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #E0E4E8 ;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.loginbtndark {
+    background-color: #E0E4E8;
+    color: black;
+    border-radius: 20px;
+    width: 75px;
+    height: 50px;
+    border: none;
+}
+.signupbtndark {
+    background: transparent;
+  border-radius: 40px;
+  border: 2px solid #E0E4E8;
+  color: #a7abae;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.38px;
+  width: 9vw;
+  margin-right: 0.3vw;
+}
+/*!DARKMODE!*/
