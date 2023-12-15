@@ -56,3 +56,55 @@ button {
   width: 4em;
   font-weight: 600;
 }
+
+
+/*!DARKMODE!*/
+.wholeUserProfiledark {
+  width: 100vw;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 20%;
+  color: #E0E4E8;
+}
+
+.profilePageContainerdark {
+  border-radius: 1em;
+  border: solid 0.1em #BEBFBF;
+  background: rgba(245, 245, 255, 0.5);
+  box-shadow: 0 0.4em 0.4em 0 #BEBFBF;
+  width: 50%;
+  display: grid;
+  justify-items: center;
+  margin: 1%;
+  padding: 1%;
+  padding-right: 1.5%;
+}
+
+.profileImagedark {
+  background-color: gray;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.userActivityHeaderdark {
+  padding: 1em 6em;
+  border-radius: 1em;
+  border-top: 3px solid #464748;
+  border-right: 3px solid #464748;
+  border-left: 3px solid #464748;
+  background: rgba(245, 245, 255, 0.5);
+  box-shadow: 0px 4px 4px 0px #464748;
+  color: #E0E4E8;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: normal;
+}
+
+
+
+/*!DARKMODE!*/

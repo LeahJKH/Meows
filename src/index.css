@@ -4,5 +4,13 @@ body {
   box-sizing: border-box;
   width: 100vw;
   background-color: #edf2fb;
-  background-image: url("../public/images/paws.png");
+  background-image: url("../public/paws.png");
+}
+.dark-mode-body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: #5E646E;
+  background-image: url("../public/paws.png");
 }
