@@ -119,46 +119,46 @@ export function LandingPage() {
 
             <div className={styles.trendBoks}>
               <div className={styles.trendingAndIcon}>
-                <p className={styles.grayText}>1. Trending</p>
+                <p className={styles.grayText}>2. Trending</p>
                 <img src="public/icon2.svg" alt="icon2" />
               </div>
-              <p className={styles.blueText}>#JessieMueller</p>
+              <p className={styles.blueText}>#ThelmaJones</p>
               <p className={styles.grayText}>456K Tweets</p>
             </div>
 
             <div className={styles.trendBoks}>
               <div className={styles.trendingAndIcon}>
-                <p className={styles.grayText}>1. Trending</p>
+                <p className={styles.grayText}>3. Trending</p>
                 <img src="public/icon2.svg" alt="icon2" />
               </div>
-              <p className={styles.blueText}>#JessieMueller</p>
+              <p className={styles.blueText}>#LoisPearson</p>
               <p className={styles.grayText}>456K Tweets</p>
             </div>
 
             <div className={styles.trendBoks}>
               <div className={styles.trendingAndIcon}>
-                <p className={styles.grayText}>1. Trending</p>
+                <p className={styles.grayText}>4. Trending</p>
                 <img src="public/icon2.svg" alt="icon2" />
               </div>
-              <p className={styles.blueText}>#JessieMueller</p>
+              <p className={styles.blueText}>#WilmaBody</p>
               <p className={styles.grayText}>456K Tweets</p>
             </div>
 
             <div className={styles.trendBoks}>
               <div className={styles.trendingAndIcon}>
-                <p className={styles.grayText}>1. Trending</p>
+                <p className={styles.grayText}>5. Trending</p>
                 <img src="public/icon2.svg" alt="icon2" />
               </div>
-              <p className={styles.blueText}>#JessieMueller</p>
+              <p className={styles.blueText}>#WilmaBody</p>
               <p className={styles.grayText}>456K Tweets</p>
             </div>
 
             <div className={styles.trendBoks}>
               <div className={styles.trendingAndIcon}>
-                <p className={styles.grayText}>1. Trending</p>
+                <p className={styles.grayText}>6. Trending</p>
                 <img src="public/icon2.svg" alt="icon2" />
               </div>
-              <p className={styles.blueText}>#JessieMueller</p>
+              <p className={styles.blueText}>#ErikBaker</p>
               <p className={styles.grayText}>456K Tweets</p>
             </div>
 
