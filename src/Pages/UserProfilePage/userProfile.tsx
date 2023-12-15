@@ -84,6 +84,8 @@ export function UserProfile() {
           key={PostInfo[1].id}
           title={PostInfo[1].title}
           content={PostInfo[1].content}
+          username=""
+          nickname=""
         />
       </div>
     </div>

@@ -1,4 +1,4 @@
-
+import { useState, Dispatch, SetStateAction } from "react";
 import NavBar from "../Components/NavBar/NavBar.tsx";
 import PostCard from "../Components/PostCard/Postcard.tsx";
 import { PostInfo } from "../Data/posts.ts";
@@ -8,13 +8,15 @@ import { useTheme } from '../ThemeContext';
 import { useState, useEffect } from "react";
 
 export function LandingPage() {
-  const [searchTerm, setSearchTerm] = useState(""); // State for the search term
+  const [searchTerm, setSearchTerm] = useState("");
 
   const filteredPosts = PostInfo.filter((post) =>
     post.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
   {
-    <NavBar setSearchTerm={setSearchTerm} />;
+    <NavBar
+      setSearchTerm={setSearchTerm as Dispatch<SetStateAction<string>>}
+    />;
   }
   const { darkMode } = useTheme();
   useEffect(() => {
@@ -88,23 +90,7 @@ export function LandingPage() {
               />{" "}
               More
             </li>
-            <li>
-              <img src="/images/house.svg" alt="house" />
-              Home
-            </li>
-            <li>
-              <img src="/images/hashtag.svg" alt="hashtag" />
-              Explore
-            </li>
-            <li>Notifications</li>
-            <li>Messages</li>
-            <li>Bookmarks</li>
-            <li>
-              <img src="/images/image-11.png" alt="image" /> Profile
-            </li>
-            <li>
-              <img src="/images/circle.svg" alt="circle" /> More
-            </li>
+        
           </ul>
           <button className={styles.meowButton}>Meow</button>
         </div>
@@ -119,6 +105,8 @@ export function LandingPage() {
                 key={post.id}
                 title={post.title}
                 content={post.content}
+                username=""
+                nickname=""
               />
             )
           )}
@@ -126,23 +114,77 @@ export function LandingPage() {
       </div>
 
       <div className={styles.feedRightContainer}>
-        <input type="text" value="Search Meows"/>
-        <div>
+
+        <input className={styles.feedRightInput} type="text" placeholder="Search Meows" value="Search Meows"  />
+
+        <div className={styles.feedTrendsContainer}>
+
           <div className={styles.feedTitleIconContainer}>
             <h1>Paris Trend</h1>
             <img src="public/icon.svg" alt="icon" />
           </div>
+
           <div className={styles.trendsContainer}>
+
             <div className={styles.trendBoks}>
               <div className={styles.trendingAndIcon}>
-                <p>1. Trending</p>
+                <p className={styles.grayText}>1. Trending</p>
                 <img src="public/icon2.svg" alt="icon2" />
               </div>
-              <p>#JessieMueller</p>
-              <p>456K Tweets</p>
+              <p className={styles.blueText}>#JessieMueller</p>
+              <p className={styles.grayText}>456K Tweets</p>
             </div>
 
+            <div className={styles.trendBoks}>
+              <div className={styles.trendingAndIcon}>
+                <p className={styles.grayText}>2. Trending</p>
+                <img src="public/icon2.svg" alt="icon2" />
+              </div>
+              <p className={styles.blueText}>#ThelmaJones</p>
+              <p className={styles.grayText}>456K Tweets</p>
+            </div>
+
+            <div className={styles.trendBoks}>
+              <div className={styles.trendingAndIcon}>
+                <p className={styles.grayText}>3. Trending</p>
+                <img src="public/icon2.svg" alt="icon2" />
+              </div>
+              <p className={styles.blueText}>#LoisPearson</p>
+              <p className={styles.grayText}>456K Tweets</p>
+            </div>
+
+            <div className={styles.trendBoks}>
+              <div className={styles.trendingAndIcon}>
+                <p className={styles.grayText}>4. Trending</p>
+                <img src="public/icon2.svg" alt="icon2" />
+              </div>
+              <p className={styles.blueText}>#WilmaBody</p>
+              <p className={styles.grayText}>456K Tweets</p>
+            </div>
+
+            <div className={styles.trendBoks}>
+              <div className={styles.trendingAndIcon}>
+                <p className={styles.grayText}>5. Trending</p>
+                <img src="public/icon2.svg" alt="icon2" />
+              </div>
+              <p className={styles.blueText}>#WilmaBody</p>
+              <p className={styles.grayText}>456K Tweets</p>
+            </div>
+
+            <div className={styles.trendBoks}>
+              <div className={styles.trendingAndIcon}>
+                <p className={styles.grayText}>6. Trending</p>
+                <img src="public/icon2.svg" alt="icon2" />
+              </div>
+              <p className={styles.blueText}>#ErikBaker</p>
+              <p className={styles.grayText}>456K Tweets</p>
+            </div>
+
+            <button className={styles.showButton}>Show more</button>
           </div>
+
+          
+
         </div>
       </div>
     </main>

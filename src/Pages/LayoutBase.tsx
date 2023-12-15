@@ -18,7 +18,6 @@ export function LayoutBase() {
 
         <NavBar setSearchTerm={setSearchTerm} />
     
-      
       <div>
        
         <Outlet />
