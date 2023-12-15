@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Style from "./SrcBar.module.css"
 import { useTheme } from '../../ThemeContext';
-import {  useEffect } from "react";
+
 
 import styles from "../NavBar/NavBar.module.css";
 import SearchSvg from "../../assets/Icons/Search";

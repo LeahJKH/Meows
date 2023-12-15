@@ -20,11 +20,8 @@ export default function NavBar({ setSearchTerm }: NavBarProps) {
   };
 
 
-interface NavBarProps {
-  setSearchTerm: React.Dispatch<React.SetStateAction<string>>;
-}
 
-export default function NavBar({ setSearchTerm }: NavBarProps) {
+ {
   const { darkMode, toggleTheme } = useTheme();
 
   const handleToggle = () => {
@@ -50,4 +47,4 @@ export default function NavBar({ setSearchTerm }: NavBarProps) {
       </nav>
     </>
   );
-}
+}}

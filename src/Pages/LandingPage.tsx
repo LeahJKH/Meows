@@ -1,11 +1,11 @@
-import { useState, Dispatch, SetStateAction } from "react";
+import { useState, Dispatch, SetStateAction , useEffect} from "react";
 import NavBar from "../Components/NavBar/NavBar.tsx";
 import PostCard from "../Components/PostCard/Postcard.tsx";
 import { PostInfo } from "../Data/posts.ts";
 import styles from "./LandingPage.module.css";
 import { Link } from "react-router-dom";
 import { useTheme } from '../ThemeContext';
-import { useState, useEffect } from "react";
+
 
 export function LandingPage() {
   const [searchTerm, setSearchTerm] = useState("");
