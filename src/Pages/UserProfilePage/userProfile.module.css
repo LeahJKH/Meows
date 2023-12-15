@@ -86,7 +86,6 @@
 }
 
 .profilePageContainerdark {
-  border-radius: 1em;
   border: solid 0.1em #bebfbf;
   background: rgba(245, 245, 255, 0.5);
   box-shadow: 0 0.4em 0.4em 0 #bebfbf;
@@ -94,14 +93,13 @@
   display: grid;
   justify-items: center;
   margin: 1%;
-  padding: 1%;
-  padding-right: 1.5%;
+  padding: 1em 6em;
+  border-radius: 1em;
 }
 /*button {
   width: 5em;
   font-size: 1em;
   font-family: "Roboto", sans-serif;
-
 }*/
 
 .profileImagedark {
@@ -121,7 +119,7 @@
   background: rgba(245, 245, 255, 0.5);
   box-shadow: 0px 4px 4px 0px #464748;
   color: #e0e4e8;
-  font-family: Inter;
+
   font-size: 20px;
   font-style: italic;
   font-weight: 800;
