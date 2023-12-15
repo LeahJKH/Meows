@@ -12,7 +12,7 @@ type PostCardProps = {
 
 
 
-const PostCard: React.FC<PostCardProps> = ({ title, content }: ) => {
+const PostCardDark: React.FC<PostCardProps> = ({ title, content, username, nickname }: ) => {
     const { darkMode } = useTheme();
 const PostCol = darkMode ? styles.postCarddark : styles.postCard;
 const HeadCol = darkMode ? styles.HeadingColdark : styles.HeadingCol;
