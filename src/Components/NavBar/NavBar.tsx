@@ -17,13 +17,11 @@ export default function NavBar({ setSearchTerm }: NavBarProps) {
     toggleTheme();
   };
 
-  const containerClass = darkMode ? styles.profilePageContainerdark : styles.profilePageContainer;
-  const imageClass = darkMode ? styles.profileImagedark : styles.profileImage;
-  const headerClass = darkMode ? styles.userActivityHeaderdark : styles.userActivityHeader;
-  const wholeUserProfileClass = darkMode ? styles.wholeUserProfiledark : styles.wholeUserProfile;
+  const navBarCol = darkMode ? styles.navBardark : styles.navBar;
+  
   return (
     <>
-      <nav className={styles.navBar}>
+      <nav className={navBarCol}>
         <div className={styles.leftNav}>
           <MeowsLogo />
           {darkMode ? <SunSvg onClick={handleToggle} /> : <MoonSvg onClick={handleToggle} />}
