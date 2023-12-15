@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Dispatch, SetStateAction } from "react";
 import NavBar from "../Components/NavBar/NavBar.tsx";
 import PostCard from "../Components/PostCard/Postcard.tsx";
 import { PostInfo } from "../Data/posts.ts";
@@ -6,13 +6,15 @@ import styles from "./LandingPage.module.css";
 import { Link } from "react-router-dom";
 
 export function LandingPage() {
-  const [searchTerm, setSearchTerm] = useState(""); // State for the search term
+  const [searchTerm, setSearchTerm] = useState("");
 
   const filteredPosts = PostInfo.filter((post) =>
     post.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
   {
-    <NavBar setSearchTerm={setSearchTerm} />;
+    <NavBar
+      setSearchTerm={setSearchTerm as Dispatch<SetStateAction<string>>}
+    />;
   }
   return (
     <main className={styles.feedContainer}>
@@ -106,6 +108,8 @@ export function LandingPage() {
                 key={post.id}
                 title={post.title}
                 content={post.content}
+                username=""
+                nickname=""
               />
             )
           )}
@@ -113,7 +117,7 @@ export function LandingPage() {
       </div>
 
       <div className={styles.feedRightContainer}>
-        <input type="text" value="Search Meows"/>
+        <input type="text" value="Search Meows" />
         <div>
           <div className={styles.feedTitleIconContainer}>
             <h1>Paris Trend</h1>
@@ -128,7 +132,6 @@ export function LandingPage() {
               <p>#JessieMueller</p>
               <p>456K Tweets</p>
             </div>
-
           </div>
         </div>
       </div>
