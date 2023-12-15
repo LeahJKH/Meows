@@ -1,9 +1,12 @@
 footer {
   background-color: #abc4ff;
   width: 100vw;
-  height: 10rem;
+  height: 10em;
   margin: 0;
   padding: 0;
+}
+footer > h3 {
+ margin-top: 0;
 }
 
 .pFooter {

@@ -4,36 +4,55 @@
   justify-items: center;
   align-items: center;
   margin-bottom: 20%;
+  color: #013374;
 }
 
 .profilePageContainer {
-  border-radius: 13px;
-  border-top: 1px solid #abc4ff;
-  border-right: 1px solid #abc4ff;
-  border-left: 1px solid #abc4ff;
+  border-radius: 1em;
+  border: solid 0.1em #c2d3fe;
   background: rgba(245, 245, 255, 0.5);
-  box-shadow: 0px 4px 4px 0px #c2d3fe;
+  box-shadow: 0 0.4em 0.4em 0 #c2d3fe;
   width: 50%;
   display: grid;
   justify-items: center;
-  margin: 2.5%;
-  padding: 4%;
+  margin: 1%;
+  padding: 1%;
+  padding-right: 1.5%;
 }
 
 .profileImage {
   background-color: gray;
-  width: 200px;
-  height: 200px;
+  width: 10em;
+  height: 10em;
   border-radius: 50%;
-  margin-top: 5px;
+  margin: 0;
 }
 
 .userActivityHeader {
-  padding: 22px 107px 23px 107px;
-  border-radius: 21px;
+  padding: 1em 6em;
+  border-radius: 1em;
   border-top: 3px solid #c1d3fe;
   border-right: 3px solid #c1d3fe;
   border-left: 3px solid #c1d3fe;
   background: rgba(245, 245, 255, 0.5);
   box-shadow: 0px 4px 4px 0px #c1d3fe;
+  color: #023e8a;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.icons {
+  display: flex;
+  margin-left: 100%;
+}
+
+h2 {
+  color: #013374;
+}
+button {
+  width: 4em;
+  font-weight: 600;
 }
