@@ -12,7 +12,7 @@ type PostCardProps = {
 
 
 
-const PostCard: React.FC<PostCardProps> = ({ title, content }) => {
+const PostCard: React.FC<PostCardProps> = ({ title, content }: ) => {
     const { darkMode } = useTheme();
 const PostCol = darkMode ? styles.postCarddark : styles.postCard;
 const HeadCol = darkMode ? styles.HeadingColdark : styles.HeadingCol;
@@ -49,6 +49,6 @@ const PostCard: React.FC<PostCardProps> = ({
       </div>
     </div>
   );
-};
+}}
 
 export default PostCard;
