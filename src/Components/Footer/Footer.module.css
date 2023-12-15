@@ -1,14 +1,23 @@
-footer {
+.footer {
   background-color: #abc4ff;
   width: 100vw;
   height: 10em;
   margin: 0;
   padding: 0;
 }
-footer > h3 {
+.footer > h3 {
  margin-top: 0;
 }
 
 .pFooter {
   font-weight: 600;
 }
+/*!DARKMODE!*/
+.footerdark {
+  background-color: #3B3B40;
+  width: 100vw;
+  height: 10em;
+  margin: 0;
+  padding: 0;
+}
+/*!DARKMODE!*/

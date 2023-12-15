@@ -1,0 +1,32 @@
+.srcbtn {
+    
+  background: transparent;
+  border-radius: 40px;
+  border: 2px solid #023e8a;
+  color: rgba(48, 90, 167, 0.8);
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.38px;
+  width: 9vw;
+  margin-right: 0.3vw;
+}
+/*!DARKMODE!*/
+.srcbtndark {
+    
+    background: transparent;
+    border-radius: 40px;
+    border: 2px solid #E0E4E8;
+    color: rgba(166, 166, 166, 0.8);
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.38px;
+    width: 9vw;
+    margin-right: 0.3vw;
+  }
+/*!DARKMODE!*/

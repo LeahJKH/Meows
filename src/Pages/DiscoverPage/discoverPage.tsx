@@ -2,8 +2,30 @@ import styles from "./discoverPage.module.css";
 import PostCard from "../../Components/PostCard/Postcard";
 import { PostInfo } from "../../Data/posts";
 import FireSvg from "../../assets/Icons/Fire";
-
+import userData from '../../Data/user.json';
+import { useTheme } from '../../ThemeContext';
+import {  useEffect } from "react";
 export function Discover() {
+  const users = userData.map(user => (
+    <div className={styles.UserProfile} key={user.email}>
+      <img src={`./Alicia.jpg`} alt="" />
+      <h4>{user.name}</h4>
+    </div>
+  ));
+  const { darkMode } = useTheme();
+  
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark-mode-body');
+    } else {
+      document.body.classList.remove('dark-mode-body');
+    }
+    return () => {
+      document.body.classList.remove('dark-mode-body');
+    };
+  }, [darkMode]);
+
+  const bottomRecoCol = darkMode ? styles.bottomRecodark : styles.bottomReco;
   return (
     <div className={styles.discoverContainer}>
 
@@ -55,29 +77,10 @@ export function Discover() {
           </div>
           </div>
 
-          <div className={styles.bottomReco}>
+          <div className={bottomRecoCol}>
             <h3>Recomended</h3>
             <div className={styles.userContain}>
-              <div className={styles.UserProfile}>
-                <img src="./Alicia.jpg" alt="" />
-                <h4>user</h4>
-              </div>
-              <div className={styles.UserProfile}>
-                <img src="./Alicia.jpg" alt="" />
-                <h4>user</h4>
-              </div>
-              <div className={styles.UserProfile}>
-                <img src="./Alicia.jpg" alt="" />
-                <h4>user</h4>
-              </div>
-              <div className={styles.UserProfile}>
-                <img src="./Alicia.jpg" alt="" />
-                <h4>user</h4>
-              </div>
-              <div className={styles.UserProfile}>
-                <img src="./Alicia.jpg" alt="" />
-                <h4>user</h4>
-              </div>
+            {users}
             </div>
           </div>
        

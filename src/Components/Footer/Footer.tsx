@@ -1,9 +1,12 @@
 import styles from "./Footer.module.css";
+import { useTheme } from '../../ThemeContext';
 
 export default function Footer() {
+  const { darkMode } = useTheme();
+  const footerCol = darkMode ? styles.footerdark : styles.footer;
   return (
     <>
-      <footer>
+      <footer className={footerCol}>
         <h3 className={styles.headingMeow}>🐾 Welcome to Meows! 🐾</h3>
         <p className={styles.pFooter}>
           Purr-fectly connecting the feline community! 🐱✨ <br />
