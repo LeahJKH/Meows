@@ -10,14 +10,12 @@
 .profilePageContainer {
   border-radius: 1em;
   border: solid 0.1em #c2d3fe;
-  background: rgba(245, 245, 255, 0.5);
   box-shadow: 0 0.4em 0.4em 0 #c2d3fe;
   width: 50%;
   display: grid;
   justify-items: center;
   margin: 1%;
-  padding: 1%;
-  padding-right: 1.5%;
+  padding: 0.7em 6em;
 }
 
 .profileImage {
@@ -31,28 +29,24 @@
 .userActivityHeader {
   padding: 1em 6em;
   border-radius: 1em;
-  border-top: 3px solid #c1d3fe;
-  border-right: 3px solid #c1d3fe;
-  border-left: 3px solid #c1d3fe;
+  border: 0.1em solid #c1d3fe;
   background: rgba(245, 245, 255, 0.5);
   box-shadow: 0px 4px 4px 0px #c1d3fe;
   color: #023e8a;
-  font-family: Inter;
-  font-size: 20px;
+  font-size: 1.1em;
   font-style: italic;
-  font-weight: 800;
-  line-height: normal;
 }
 
 .icons {
   display: flex;
-  margin-left: 100%;
+  margin-left: 93%;
 }
 
 h2 {
   color: #013374;
 }
 button {
-  width: 4em;
-  font-weight: 600;
+  width: 5em;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
 }
