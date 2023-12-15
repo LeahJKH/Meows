@@ -10,7 +10,6 @@ const ThemeContext = createContext<ThemeContextType>({
   toggleTheme: () => {},
 });
 
-
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [darkMode, setDarkMode] = useState(false);
   
