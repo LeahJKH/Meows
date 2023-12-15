@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from "../NavBar/NavBar.module.css";
+import SearchSvg from "../../assets/Icons/Search";
+
 interface SearchbarProps {
   setSearchTerm: React.Dispatch<React.SetStateAction<string>>;
 } // This sets the search term in a variable we can drag out later
@@ -24,13 +26,15 @@ const Searchbar = ({ setSearchTerm }: SearchbarProps) => {
   return (
     <div>
       <input
+        className={styles.searchBar}
+        placeholder="Search..."
         type="text"
         value={searchValue}
         onChange={handleSearchChange}
         onKeyDown={handleKeyDown}
       />
       <button className={styles.searchButton} onClick={handleSearchClick}>
-        Search
+        <SearchSvg />
       </button>
     </div>
   );
