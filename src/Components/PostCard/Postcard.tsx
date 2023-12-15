@@ -13,9 +13,6 @@ type PostCardProps = {
 
 
 
- // const { darkMode } = useTheme();
- // const PostCol = darkMode ? styles.postCarddark : styles.postCard;
- // const HeadCol = darkMode ? styles.HeadingColdark : styles.HeadingCol;    
 
 
 const PostCard: React.FC<PostCardProps> = ({
@@ -25,7 +22,10 @@ const PostCard: React.FC<PostCardProps> = ({
   nickname,
   
 }) => {
-  
+  const { darkMode } = useTheme();
+  const PostCol = darkMode ? styles.postCarddark : styles.postCard;
+ const HeadCol = darkMode ? styles.HeadingColdark : styles.HeadingCol;    
+
   return (
     
     <div className={styles.postCardContainer}>
