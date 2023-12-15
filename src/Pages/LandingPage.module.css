@@ -67,6 +67,7 @@
   line-height: normal;
   letter-spacing: 3.6px;
   cursor: pointer;
+  width: 9vw;
 }
 
 .navContainer{
@@ -122,7 +123,6 @@
   display: inline-flex;
   padding: 16px 69px;
   align-items: center;
-  gap: 10px;
   border-radius: 100px;
   background: #023E8A;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
@@ -137,6 +137,7 @@
   margin-bottom: 2vh;
   border: none; 
   cursor: pointer;
+  width: 9vw;
 }
 
 .feedMiddleContainer{
@@ -172,17 +173,15 @@
 
 .feedRightContainer{
   width: 22vw;
-  height: 98vh;
-  margin-top: 4vh;
-  border: 1px solid rgba(0, 0, 0, 0.50);
+  margin-top: 8vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
 }
 
-.feedRightContainer input{
-width: 15vw;
+.feedRightInput{
+width: 12.5vw;
 height: 40px;
 border-radius: 100px;
 border: none;
@@ -191,31 +190,97 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 16px;
+background-image: url("public/searchicon.svg");
+background-repeat: no-repeat;
+background-position-x: 1.5vw;
+background-position-y: center;
+padding-left: 3vw;
+
 }
 
+.feedRightInput::placeholder{
+  color: var(--Gray-3, #828282);
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.feedTrendsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  background: #F5F5FF;
+}
 .feedTitleIconContainer{
   display: flex;
-  gap: 5vw;
+  gap: 7.5vw;
+
+}
+
+.feedTitleIconContainer h1{
+  margin: 3vh 0 2vh 0;
+  font-family: Roboto;
+  color: #023E8A;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
 }
 
 .trendsContainer{
   display: flex;
-  padding: 14px 0px;
   flex-direction: column;
-  align-items: center;
   gap: 12px;
-  border-radius: 12px;
-  background: #F5F5FF;
+  padding: 14px 0px;
+  align-items: center;
 }
 
 .trendingAndIcon{
   display: flex;
-  gap: 5vw;
+  gap: 10vw;
+  margin: 0;
 }
 
 .trendBoks{
-  
+ 
+  border-bottom: 1px solid lightgray;
+  padding: 0 1vw 2vh 1vw;
+ 
 }
 
+.grayText{
+  color: var(--Gray-3, #828282);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.blueText{
+  color: #023E8A;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 1vh 0;
+}
+
+.showButton{
+  color: #ABC4FF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  width: 9vw;
+
+}
 
 
