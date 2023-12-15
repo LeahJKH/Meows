@@ -57,9 +57,27 @@ export function Discover() {
 
           <div className={styles.bottomReco}>
             <h3>Recomended</h3>
-            <div>
-              <img src="./Alicia.jpg" alt="" />
-              <h4>user</h4>
+            <div className={styles.userContain}>
+              <div className={styles.UserProfile}>
+                <img src="./Alicia.jpg" alt="" />
+                <h4>user</h4>
+              </div>
+              <div className={styles.UserProfile}>
+                <img src="./Alicia.jpg" alt="" />
+                <h4>user</h4>
+              </div>
+              <div className={styles.UserProfile}>
+                <img src="./Alicia.jpg" alt="" />
+                <h4>user</h4>
+              </div>
+              <div className={styles.UserProfile}>
+                <img src="./Alicia.jpg" alt="" />
+                <h4>user</h4>
+              </div>
+              <div className={styles.UserProfile}>
+                <img src="./Alicia.jpg" alt="" />
+                <h4>user</h4>
+              </div>
             </div>
           </div>
        
