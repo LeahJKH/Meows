@@ -2,7 +2,7 @@ import { useState, useEffect, ChangeEvent } from "react";
 import PostCard from "../../Components/PostCard/Postcard";
 import styles from "./userProfile.module.css";
 import { PostInfo } from "../../Data/posts";
-import { useTheme } from '../../ThemeContext';
+import { useTheme } from "../../ThemeContext";
 import EditSvg from "../../assets/Icons/Edit";
 import MoreSvg from "../../assets/Icons/More";
 
@@ -31,18 +31,24 @@ export function UserProfile() {
     localStorage.setItem("userBio", bio);
   }, [bio]);
 
-  const containerClass = darkMode ? styles.profilePageContainerdark : styles.profilePageContainer;
+  const containerClass = darkMode
+    ? styles.profilePageContainerdark
+    : styles.profilePageContainer;
   const imageClass = darkMode ? styles.profileImagedark : styles.profileImage;
-  const headerClass = darkMode ? styles.userActivityHeaderdark : styles.userActivityHeader;
-  const wholeUserProfileClass = darkMode ? styles.wholeUserProfiledark : styles.wholeUserProfile;
+  const headerClass = darkMode
+    ? styles.userActivityHeaderdark
+    : styles.userActivityHeader;
+  const wholeUserProfileClass = darkMode
+    ? styles.wholeUserProfiledark
+    : styles.wholeUserProfile;
   useEffect(() => {
     if (darkMode) {
-      document.body.classList.add('dark-mode-body');
+      document.body.classList.add("dark-mode-body");
     } else {
-      document.body.classList.remove('dark-mode-body');
+      document.body.classList.remove("dark-mode-body");
     }
     return () => {
-      document.body.classList.remove('dark-mode-body');
+      document.body.classList.remove("dark-mode-body");
     };
   }, [darkMode]);
 
@@ -51,9 +57,8 @@ export function UserProfile() {
       <div className={containerClass}>
         <h2 className={styles.HeadingCol}>@USERNAME</h2>
         <div className={styles.icons}>
-         
           {isEditingBio ? (
-            <button onClick={handleEditClick} className={styles.EditBtn}>Save</button>
+            <button onClick={handleEditClick}>Save</button>
           ) : (
             <EditSvg onClick={handleEditClick} />
           )}
@@ -81,6 +86,8 @@ export function UserProfile() {
       </div>
       <div className={styles.userActivityFeed}>
         <PostCard
+          username=""
+          nickname=""
           key={PostInfo[1].id}
           title={PostInfo[1].title}
           content={PostInfo[1].content}
