@@ -33,3 +33,19 @@ p {
   justify-content: center;
   border-radius: 0 0 23px 23px;
 }
+.HeadingCol {
+  color: #013374;
+}
+
+/*!DARKMODE!*/
+.postCarddark {
+  border-radius: 23px;
+  border: 1px solid #E0E4E8;
+  background: #3B3B40;
+  box-shadow: 0px 4px 4px 1px #535359;
+  width: 60em;
+}
+.HeadingColdark {
+  color: #E0E4E8;
+}
+/*!DARKMODE!*/

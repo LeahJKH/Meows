@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import style from './Signin.module.css';
 import usersData from '../../Data/user.json';
+import { useTheme } from '../../ThemeContext';
 
 interface User {
   name: string;
@@ -42,11 +43,13 @@ export default function Signup() {
         return `${year}-${month}-${date}`; 
     }; // this is just a format so i get date then month then year
 
-
-
+    const { darkMode } = useTheme();
+    const SignUp = darkMode ? style.signupbtndark : style.signupbtn;
+    const LogBtn = darkMode ? style.loginbtndark : style.loginbtn;
+    const SignContain = darkMode ? style.Signupcontainerdark : style.Signupcontainer;
     return (
         <>
-            <div className={style.Signupcontainer}>
+            <div className={SignContain}>
             <input type="text" name="NameSignup" onChange={(e) => setName(e.target.value)} placeholder="Name" />
             <input type="email" name="EmailSignup" onChange={(e) => setEmail(e.target.value)} placeholder="Email"/>
                 <input type="password" name="PassSignup" onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
@@ -58,13 +61,13 @@ export default function Signup() {
                     <option value="Nonbinary">Nonbinary</option>
                     <option value="Dont wish too enter">Dont wish to enter</option>
                 </select>
-                <button className={style.signupbtn} onClick={handleSignup}>sign up</button>
+                <button className={SignUp} onClick={handleSignup}>sign up</button>
             </div>
 
             <div>
                 <div className={style.usercontainer}>
                     <p>have a user?</p>
-                    <button className={style.loginbtn}>loginn</button>
+                    <button className={LogBtn}>loginn</button>
                 </div>
             </div>
         </>

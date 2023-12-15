@@ -1,7 +1,10 @@
-export default function SunSvg() {
+interface sunSvgProps {
+  onClick: () => void; 
+}
+export default function SunSvg({ onClick }: sunSvgProps) {
   return (
     <>
-      <svg
+      <svg onClick={onClick}
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"

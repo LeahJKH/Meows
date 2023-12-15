@@ -51,11 +51,11 @@
   margin: 5px 15px;
 }
 .UserProfile > img {
- width: 90%;
+ width: 81px;
  border-radius: 50%;
 }
 .UserProfile > h4 {
- font-size: 4ch;
+ font-size: 27px;
  margin: 0;
  }
 /*BOTTOM USER STYLING*/
@@ -83,3 +83,15 @@
   background: #02316e; 
 }
 */
+
+/*!DARK MODE!*/
+/*BOTTOM USER STYLING*/
+.bottomRecodark {
+  width: 98vw;
+  background-color: #3B3B40;
+  border-top: #E0E4E8 2px solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+/*BOTTOM USER STYLING*/
+/*!DARK MODE!*/

@@ -17,29 +17,17 @@
   margin-right: 3vw;
 }
 
-.searchBar {
-  border-radius: 40px;
-  border: 2px solid #023e8a;
-  background-color: #bccdf7;
+
+
+/*!DARKMODE!*/
+.navBardark {
+  background-color: #3B3B40;
+  width: 100vw;
+  padding: 1vh;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
-.searchBar::placeholder {
-  color: #023e8a;
-}
 
-.searchButton {
-  background: rgba(48, 90, 167, 0.8);
-  border-radius: 40px;
-  border: 2px solid #023e8a;
-  color: rgba(248, 248, 248, 0.8);
-  font-size: 1em;
-  font-style: normal;
-  font-weight: 500;
-  width: 9vw;
-  margin-right: 0.3vw;
-  cursor: pointer;
-}
 
-.searchButton:hover {
-  background: aliceblue;
-}
+
