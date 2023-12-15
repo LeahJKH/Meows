@@ -18,6 +18,20 @@
   padding: 0.7em 6em;
 }
 
+.saveButton {
+  border: solid 0.1em #013374;
+  border-radius: 0.5em;
+  background-color: #023e8a;
+  color: #c2d3fe;
+}
+
+.bioTextarea {
+  border: solid 0.1em #013374;
+  border-radius: 0.5em;
+  width: 30vw;
+  height: 10vh;
+}
+
 .profileImage {
   background-color: gray;
   width: 10em;
