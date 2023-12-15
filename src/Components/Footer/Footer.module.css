@@ -5,6 +5,9 @@ footer {
   margin: 0;
   padding: 0;
 }
+footer > h3 {
+ margin-top: 0;
+}
 
 .pFooter {
   font-weight: 600;

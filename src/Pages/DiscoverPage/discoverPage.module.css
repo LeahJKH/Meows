@@ -1,3 +1,4 @@
+/* TOP BOX STYLING */
 .topside {
   display: flex;
   flex-direction: row;
@@ -6,33 +7,16 @@
 .topside > div {
  margin: 0 15px;
 }
+/* TOP BOX STYLING */
 
+/*TOP MEOWS STYLING*/
 .MeowContainer {
-  height: 400px;
+  height: 500px;
   overflow-y: auto;
 }
-::-webkit-scrollbar {
-  width: 10px;
-}
+/*TOP MEOWS STYLING*/
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #F5F5FF;
-  border: 0.5px solid #023e8a; 
-  border-radius: 20px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #023e8a; 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #02316e; 
-}
-
+/*HASHTAG BOXES STYLING*/
 .HashS {
   display: flex;
   flex-direction: row;
@@ -43,3 +27,59 @@
 .HashS > p {
   margin-left: 10px;
 }
+/*HASHTAG BOXES STYLING*/
+
+/*BOTTOM USER STYLING*/
+.bottomReco {
+  width: 98vw;
+  background-color: #F5F5FF;
+  border-top: #023E8A 2px solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.userContain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.UserProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 15px;
+}
+.UserProfile > img {
+ width: 90%;
+ border-radius: 50%;
+}
+.UserProfile > h4 {
+ font-size: 4ch;
+ margin: 0;
+ }
+/*BOTTOM USER STYLING*/
+
+ /*
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #F5F5FF;
+  border: 0.5px solid #023e8a; 
+  border-radius: 20px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #023e8a; 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #02316e; 
+}
+*/
