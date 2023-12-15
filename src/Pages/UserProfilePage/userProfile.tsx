@@ -86,6 +86,8 @@ export function UserProfile() {
       </div>
       <div className={styles.userActivityFeed}>
         <PostCard
+          username=""
+          nickname=""
           key={PostInfo[1].id}
           title={PostInfo[1].title}
           content={PostInfo[1].content}

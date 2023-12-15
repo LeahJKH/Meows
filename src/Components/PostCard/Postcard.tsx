@@ -10,24 +10,18 @@ type PostCardProps = {
   nickname: string;
 };
 
-
-
-const PostCardDark: React.FC<PostCardProps> = ({ title, content, username, nickname }: ) => {
-    const { darkMode } = useTheme();
-const PostCol = darkMode ? styles.postCarddark : styles.postCard;
-const HeadCol = darkMode ? styles.HeadingColdark : styles.HeadingCol;
- 
-        
-
 const PostCard: React.FC<PostCardProps> = ({
   title,
   content,
   username,
   nickname,
 }) => {
+  const { darkMode } = useTheme();
+  const PostCol = darkMode ? styles.postCarddark : styles.postCard;
+  const HeadCol = darkMode ? styles.HeadingColdark : styles.HeadingCol;
   return (
     <div className={styles.postCardContainer}>
-       <div className={PostCol}>
+      <div className={PostCol}>
         <div className={styles.postHeader}>
           <img
             className={styles.postPic}
@@ -36,7 +30,7 @@ const PostCard: React.FC<PostCardProps> = ({
           />
           <div className={styles.userInfo}>
             <span className={styles.username}>{username}</span>
-            <span className={styles.nickname} >{nickname}</span>
+            <span className={styles.nickname}>{nickname}</span>
           </div>
         </div>
         <h2 className={HeadCol}>{title}</h2>
@@ -49,6 +43,6 @@ const PostCard: React.FC<PostCardProps> = ({
       </div>
     </div>
   );
-}}
+};
 
 export default PostCard;
