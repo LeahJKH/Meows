@@ -49,6 +49,6 @@ const PostCard: React.FC<PostCardProps> = ({
       </div>
     </div>
   );
-};
+}}
 
 export default PostCard;
