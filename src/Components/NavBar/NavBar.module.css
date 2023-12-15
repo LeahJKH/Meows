@@ -17,17 +17,19 @@
   margin-right: 3vw;
 }
 
-button {
+.searchButton {
   background: transparent;
   border-radius: 40px;
   border: 2px solid #023e8a;
   color: rgba(48, 90, 167, 0.8);
-  font-family: Inter;
-  font-size: 19px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.38px;
   width: 9vw;
   margin-right: 0.3vw;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background: aliceblue;
 }
