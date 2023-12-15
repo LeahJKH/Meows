@@ -111,7 +111,27 @@ export function LandingPage() {
           )}
         </div>
       </div>
-      <div className={styles.feedRightContainer}></div>
+
+      <div className={styles.feedRightContainer}>
+        <input type="text" value="Search Meows"/>
+        <div>
+          <div className={styles.feedTitleIconContainer}>
+            <h1>Paris Trend</h1>
+            <img src="public/icon.svg" alt="icon" />
+          </div>
+          <div className={styles.trendsContainer}>
+            <div className={styles.trendBoks}>
+              <div className={styles.trendingAndIcon}>
+                <p>1. Trending</p>
+                <img src="public/icon2.svg" alt="icon2" />
+              </div>
+              <p>#JessieMueller</p>
+              <p>456K Tweets</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
