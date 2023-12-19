@@ -115,7 +115,7 @@ export function LandingPage() {
 
       <div className={styles.feedRightContainer}>
 
-        <input className={styles.feedRightInput} type="text" placeholder="Search Meows" value="Search Meows"  />
+        <input className={styles.feedRightInput} type="text" placeholder="Search Meows" />
 
         <div className={styles.feedTrendsContainer}>
 

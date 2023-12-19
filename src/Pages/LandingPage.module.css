@@ -3,15 +3,19 @@
   width: 100vw;
 }
 
-.feedLeftContainer {
+/* Feed Left Container */
+.feedLeftContainer{
+
   width: 29.38vw;
   gap: 4.3vw;
   display: flex;
   flex-direction: column;
   margin-top: 4vh;
+  
 }
 
-.userContainer {
+/* User Container */
+.userContainer{
   display: grid;
   grid-template-columns: auto auto;
   gap: 1.2vw;
@@ -46,6 +50,7 @@
   line-height: normal;
 }
 
+
 .userButtons {
   display: inline-flex;
   padding: 8px 27px 9px 28px;
@@ -65,10 +70,11 @@
   line-height: normal;
   letter-spacing: 3.6px;
   cursor: pointer;
-  width: 9vw;
 }
 
-.navContainer {
+/* Nav Container */
+.navContainer{
+
   border-radius: 13px;
   border: 1px solid rgba(193, 211, 254, 0.5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -118,7 +124,7 @@
 
 .meowButton {
   display: inline-flex;
-  padding: 16px 69px;
+  padding: 0.8vw 3.6vw;
   align-items: center;
   border-radius: 100px;
   background: #023e8a;
@@ -134,17 +140,21 @@
   margin-bottom: 2vh;
   border: none;
   cursor: pointer;
-  width: 9vw;
 }
 
-.feedMiddleContainer {
+/* Feed Middle Container */
+.feedMiddleContainer{
+
   text-align: center;
+  width: 60%;
+ 
 }
 
 .postCardContainer {
   display: flex;
   flex-direction: column;
   padding: 0 1.5vw;
+  
 }
 
 .feedTitle {
@@ -162,13 +172,15 @@
   background: rgba(245, 245, 255, 0.5);
   box-shadow: 0px 4px 4px 0px #c1d3fe;
   display: inline-flex;
-  padding: 22px 135px 23px 135px;
+  padding: 1.15vw 7vw 1.15vw 7vw;
   justify-content: center;
   align-items: center;
   margin-top: 2vh;
 }
 
-.feedRightContainer {
+/* Feed Right Container */
+.feedRightContainer{
+
   width: 22vw;
   margin-top: 8vh;
   display: flex;
@@ -176,6 +188,7 @@
   align-items: center;
   gap: 16px;
 }
+
 
 .feedRightInput {
   width: 12.5vw;
@@ -210,6 +223,7 @@
   border-radius: 12px;
   background: #f5f5ff;
 }
+
 .feedTitleIconContainer {
   display: flex;
   gap: 7.5vw;
@@ -238,6 +252,7 @@
   gap: 10vw;
   margin: 0;
 }
+
 
 .trendBoks {
   border-bottom: 1px solid lightgray;
@@ -272,5 +287,54 @@
   font-weight: 500;
   line-height: normal;
   border: none;
-  width: 9vw;
+  background: #F5F5FF;
+}
+
+@media (max-width: 1300px) {
+  
+  .feedLeftContainer{
+    width: 30%;
+    gap: 4.3vw;
+  }
+
+  .userContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imageNameContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedMiddleContainer{
+    width: 70%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  
+  .feedLeftContainer{
+    width: 30%;
+    gap: 4.3vw;
+  }
+
+  .userContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imageNameContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedMiddleContainer{
+    width: 70%;
+  }
+
+  .feedRightContainer{
+    display: none;
+  }
 }
