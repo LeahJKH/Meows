@@ -5,9 +5,6 @@ import { PostInfo } from "../../Data/posts";
 import { useTheme } from "../../ThemeContext";
 import EditSvg from "../../assets/Icons/Edit";
 import MoreSvg from "../../assets/Icons/More";
-import Login from "../../Components/Login/Login";
-import Signup from "../../Components/Signup/Signup";
-
 
 export function UserProfile() {
   const { darkMode } = useTheme();
@@ -58,6 +55,11 @@ let UsersNameLocal = sessionStorage.getItem("username")
   let NameLocal =  sessionStorage.getItem("name")
   let GenderLocal = sessionStorage.getItem("gender")
   let UserPost = sessionStorage.getItem("Posts")
+
+  if (!sessionStorage.getItem("username")) {
+    location.href ="/LogIn"
+  }
+
   return (
     <div className={wholeUserProfileClass}>
       <div className={containerClass}>
