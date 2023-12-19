@@ -3,14 +3,17 @@
   width: 100vw;
 }
 
+/* Feed Left Container */
 .feedLeftContainer{
   width: 29.38vw;
   gap: 4.3vw;
   display: flex;
   flex-direction: column;
   margin-top: 4vh;
+  
 }
 
+/* User Container */
 .userContainer{
   display: grid;
   grid-template-columns: auto auto;
@@ -47,8 +50,7 @@
 }
 
 .userButtons{
-  display: inline-flex;
-  padding: 8px 27px 9px 28px;
+  padding: 0.42vw 1.42vw 0.47vw 1.47vw;
   justify-content: center;
   align-items: center;
   border-radius: 23px;
@@ -66,9 +68,9 @@
   line-height: normal;
   letter-spacing: 3.6px;
   cursor: pointer;
-  width: 9vw;
 }
 
+/* Nav Container */
 .navContainer{
   border-radius: 13px;
   border: 1px solid rgba(193, 211, 254, 0.50);
@@ -120,7 +122,7 @@
 
 .meowButton{
   display: inline-flex;
-  padding: 16px 69px;
+  padding: 0.8vw 3.6vw;
   align-items: center;
   border-radius: 100px;
   background: #023E8A;
@@ -136,17 +138,20 @@
   margin-bottom: 2vh;
   border: none; 
   cursor: pointer;
-  width: 9vw;
 }
 
+/* Feed Middle Container */
 .feedMiddleContainer{
   text-align: center;
+  width: 60%;
+ 
 }
 
 .postCardContainer{
   display: flex;
   flex-direction: column;
   padding: 0 1.5vw;
+  
 }
 
 .feedTitle{
@@ -164,12 +169,13 @@
   background: rgba(245, 245, 255, 0.50);
   box-shadow: 0px 4px 4px 0px #C1D3FE;
   display: inline-flex;
-  padding: 22px 135px 23px 135px;
+  padding: 1.15vw 7vw 1.15vw 7vw;
   justify-content: center;
   align-items: center;
   margin-top: 2vh;
 }
 
+/* Feed Right Container */
 .feedRightContainer{
   width: 22vw;
   margin-top: 8vh;
@@ -194,7 +200,6 @@ background-repeat: no-repeat;
 background-position-x: 1.5vw;
 background-position-y: center;
 padding-left: 3vw;
-
 }
 
 .feedRightInput::placeholder{
@@ -213,10 +218,10 @@ padding-left: 3vw;
   border-radius: 12px;
   background: #F5F5FF;
 }
+
 .feedTitleIconContainer{
   display: flex;
   gap: 7.5vw;
-
 }
 
 .feedTitleIconContainer h1{
@@ -244,10 +249,8 @@ padding-left: 3vw;
 }
 
 .trendBoks{
- 
   border-bottom: 1px solid lightgray;
   padding: 0 1vw 2vh 1vw;
- 
 }
 
 .grayText{
@@ -278,8 +281,60 @@ padding-left: 3vw;
   font-weight: 500;
   line-height: normal;
   border: none;
-  width: 9vw;
+  background: #F5F5FF;
+}
+
+@media (max-width: 1300px) {
+  
+  .feedLeftContainer{
+    width: 30%;
+    gap: 4.3vw;
+  }
+
+  .userContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imageNameContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedMiddleContainer{
+    width: 70%;
+  }
 
 }
+
+@media (max-width: 768px) {
+  
+  .feedLeftContainer{
+    width: 30%;
+    gap: 4.3vw;
+  }
+
+  .userContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imageNameContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedMiddleContainer{
+    width: 70%;
+  }
+
+  .feedRightContainer{
+    display: none;
+  }
+}
+
+
+
+
 
 
