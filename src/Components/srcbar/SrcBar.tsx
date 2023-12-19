@@ -1,10 +1,6 @@
 import React, { useState } from "react";
-
-import Style from "./SrcBar.module.css"
+import style from "./SrcBar.module.css"
 import { useTheme } from '../../ThemeContext';
-
-
-import styles from "../NavBar/NavBar.module.css";
 import SearchSvg from "../../assets/Icons/Search";
 
 
@@ -31,17 +27,17 @@ const Searchbar = ({ setSearchTerm }: SearchbarProps) => {
 
 
   const { darkMode } = useTheme();
-  const srcbtnCol = darkMode ? Style.srcbtndark : Style.srcbtn;
+  const srcbtnCol = darkMode ? style.srcbtndark : style.srcbtn;
   return (
     <div>
       <input
-        className={styles.searchBar}
+        className={style.searchBar}
         placeholder="Search..."
         type="text"
         value={searchValue}
         onChange={handleSearchChange}
         onKeyDown={handleKeyDown}
-      />
+      ></input>
 
       <button className={srcbtnCol} onClick={handleSearchClick}>
         <SearchSvg />
