@@ -58,7 +58,9 @@ export function UserProfile() {
         <h2 className={styles.HeadingCol}>@USERNAME</h2>
         <div className={styles.icons}>
           {isEditingBio ? (
-            <button onClick={handleEditClick}>Save</button>
+            <button className={styles.saveButton} onClick={handleEditClick}>
+              Save
+            </button>
           ) : (
             <EditSvg onClick={handleEditClick} />
           )}
