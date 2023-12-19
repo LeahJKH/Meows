@@ -6,6 +6,7 @@ import { PostInfo } from "../Data/posts.ts";
 import styles from "./LandingPage.module.css";
 import { Link } from "react-router-dom";
 import { useTheme } from "../ThemeContext";
+import MeowsHead from "../assets/Icons/meowshead.tsx";
 
 export function LandingPage() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -48,7 +49,7 @@ export function LandingPage() {
         </div>
 
         <div className={styles.navContainer}>
-          <img className={styles.catImage} src="/cat.svg" alt="cat" />
+          <MeowsHead />
           <ul className={styles.navLinkContainer}>
             <li>
               <Link className={styles.linkDecoration} to={"/"}>
