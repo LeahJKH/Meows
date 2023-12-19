@@ -5,6 +5,9 @@ import { PostInfo } from "../../Data/posts";
 import { useTheme } from "../../ThemeContext";
 import EditSvg from "../../assets/Icons/Edit";
 import MoreSvg from "../../assets/Icons/More";
+import Login from "../../Components/Login/Login";
+import Signup from "../../Components/Signup/Signup";
+
 
 export function UserProfile() {
   const { darkMode } = useTheme();
@@ -54,6 +57,8 @@ export function UserProfile() {
 
   return (
     <div className={wholeUserProfileClass}>
+      <Login></Login>
+      <Signup></Signup>
       <div className={containerClass}>
         <h2 className={styles.HeadingCol}>@USERNAME</h2>
         <div className={styles.icons}>
