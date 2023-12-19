@@ -143,4 +143,134 @@ export const PostInfo = [
     content:
       "In the essence of less, I find abundance. Minimalist living—simplicity, mindfulness, and the art of cherishing what truly matters.",
   },
+  {
+    id: 25,
+    title: "Coffee Chronicles: The Mug Menace",
+    content: "I collect coffee mugs like they're Pokémon. Can't resist a new one, but they're plotting against me. Every time I open the cabinet, it's a mug avalanche! #MugMenace",
+  },
+  {
+    id: 26,
+    title: "Laundry Laments",
+    content: "Laundry day: where socks vanish, clothes shrink, and one rogue red sock turns everything pink. It's like a spin cycle of surprises! #LaundryWoes",
+  },
+  {
+    id: 27,
+    title: "Remote Control Riddles",
+    content: "Why do remote controls play hide-and-seek? Always between cushions, under blankets—never where you left them. Maybe they're on vacation with the missing socks! #RemoteRiddles",
+  },
+  {
+    id: 28,
+    title: "Office Chair Olympics",
+    content: "My office chair has serious wanderlust. I sit down, and it rolls away like it's prepping for an Olympic sprint. Not sure if it's rebellious or just too excited! #ChairAdventures",
+  },
+  {
+    id: 29,
+    title: "Culinary Capers: The Burnt Chronicles",
+    content: "I'm a culinary genius. No, really! Those blackened dishes? It's a new trend—'extra crispy' cuisine. Yeah, that's the story I'm sticking to! #CookingFails",
+  },
+  {
+    id: 30,
+    title: "Shopping Shenanigans",
+    content: "Grocery shopping is a battlefield. Every aisle is a strategic mission, and the cart? It has a mind of its own! Dodging obstacles like a pro. #ShoppingWars",
+  },
+  {
+    id: 31,
+    title: "Cat-tastrophe in the Kitchen",
+    content: "Cooking with a cat around is like hosting a culinary show with an unexpected guest judge. Their critique? 'Not enough tuna!' #CatKitchenDrama",
+  },
+  {
+    id: 32,
+    title: "The Feline Office Assistant",
+    content: "Working from home with a cat means having a furry 'assistant' who thinks the keyboard is a purr-fect place to nap. Productivity level: challenged! #WorkFromHomeWoes",
+  },
+  {
+    id: 33,
+    title: "Naptime Negotiations",
+    content: "Cats have mastered the art of negotiation: 'Your workspace? Nope, it's my nap zone now.' It's like living with a tiny, fur-coated diplomat! #CatNegotiations",
+  },
+  {
+    id: 34,
+    title: "Paw-some Yoga Partners",
+    content: "Attempting yoga at home means having a cat who thinks downward dog is an invitation to play. Namaste? More like 'No, stop that!' #YogaWithCats",
+  },
+  {
+    id: 35,
+    title: "The Midnight Zoomies",
+    content: "Ever witnessed a cat's sudden burst of energy at 3 AM? It's like a NASCAR race in the living room. Furniture obstacles? Challenge accepted! #MidnightZoomies",
+  },
+  {
+    id: 36,
+    title: "Cat Logic 101",
+    content: "Cat logic: prefer the cardboard box over the expensive bed; knock over pens but never admit guilt; demand attention but only on their terms. They rule the house! #CatLogicWins",
+  },
+  {
+    id: 37,
+    title: "Mewsic and Catitude",
+    content: "Playing music when you have a cat: they critique your taste with a flick of their tail. 'Not my jam, human!' Their mewsical tastes are as picky as their food choices! #CatCritic",
+  },
+  {
+    id: 38,
+    title: "Inventory Woes: The Gamer's Struggle",
+    content: "Managing inventory in games is like playing a never-ending game of Tetris. Always full, never enough space! #GamerProblems",
+  },
+  {
+    id: 39,
+    title: "NPC Antics: The 'Helpful' Guide",
+    content: "NPCs in games be like, 'I'm here to help!' but end up walking into walls, repeating dialogue, or just vanishing when needed most. Thanks for the 'help'! #NPCAdventures",
+  },
+  {
+    id: 40,
+    title: "Saving Game Progress: The Ritual",
+    content: "Saving a game: the most nerve-wracking yet vital task. That 'saved successfully' message? Pure relief! #SaveGameAnxiety",
+  },
+  {
+    id: 41,
+    title: "Respawn Chronicles",
+    content: "Respawning in games: the ultimate do-over! Falling off cliffs, getting eaten by dragons—it's like a cycle of epic fails with a chance for redemption. #RespawnMagic",
+  },
+  {
+    id: 42,
+    title: "Loot Drops and Luck",
+    content: "Waiting for that rare loot drop in games feels like waiting for Santa Claus in July. The anticipation is real! #LootHunt",
+  },
+  {
+    id: 43,
+    title: "Gaming Marathon Realities",
+    content: "Planning a gaming marathon: 'I'll just play for an hour...' Cut to 10 hours later: 'What year is it?' Time warps in the gaming universe! #GamingMarathon",
+  },
+  {
+    id: 44,
+    title: "Weather Woes: Dressing Dilemma",
+    content: "Forecast: Sunny with a chance of everything! Dressing for the day feels like playing fashion roulette. Will it rain? Will it be scorching? Prepare for all seasons in one day! #WeatherDrama",
+  },
+  {
+    id: 45,
+    title: "Procrastination Station",
+    content: "Procrastination level: Expert. Task: making lists about tasks to do. Priorities? Who needs 'em? #ProcrastinationGameStrong",
+  },
+  {
+    id: 46,
+    title: "Traffic Tales: Commuter's Chronicles",
+    content: "In traffic, it's a competition: which lane will move faster? Spoiler alert: I'll choose wrong every time! #TrafficAdventures",
+  },
+  {
+    id: 47,
+    title: "The 'Is It Friday Yet?' Dilemma",
+    content: "Monday, Tuesday, Wednesday, Thursday... the eternal question lingers: Is it Friday yet? The countdown to the weekend is real! #WeekdayWishes",
+  },
+  {
+    id: 48,
+    title: "Mysterious Missing Items",
+    content: "Searching for lost items in the house is like a treasure hunt without the map. Keys, wallet, sanity—where art thou? #LostAndFoundSaga",
+  },
+  {
+    id: 49,
+    title: "The 'Just One More Episode' Trap",
+    content: "Every time I say, 'Just one more episode,' it magically turns into a Netflix marathon. 'Next episode starting in 5 seconds...' and there goes my productivity! #BingeWatchBlues",
+  },
+  {
+    id: 50,
+    title: "The 'I'll Remember That' Moment",
+    content: "Remembering something important at 3 AM: 'I'll definitely remember this in the morning.' Morning arrives: 'What was I supposed to remember again?' The brain's mysterious ways! #MemoryFail",
+  },
 ];
