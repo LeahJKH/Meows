@@ -1,81 +1,94 @@
 .logincontainer {
-    background-color: #F5F5FF;
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #023E8A ;
-    padding: 10px;
-    border-radius: 25px;
+  background-color: #F5F5FF;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #023E8A ;
+  padding: 10px;
+  border-radius: 25px;
 }
 .Signupcontainer > input {
-    height: 20px;
-    margin: 5px 0;
-     width: 200px;
- }
+  height: 20px;
+  margin: 5px 0;
+   width: 200px;
+}
 
 .loginbtn {
-    background-color: #023E8A;
-    color: whitesmoke;
-    border-radius: 20px;
-    width: 75px;
-    height: 50px;
-    border: none;
+  background-color: #023E8A;
+  color: whitesmoke;
+  border-radius: 20px;
+  width: 75px;
+  height: 50px;
+  border: none;
 }
 
 .nonusercontainer {
-  margin: 0;
+display: flex;
+flex-direction: row;
+margin-top: 20px;
 }
 
 .signupbtn {
-    background: transparent;
-  border-radius: 40px;
-  border: 2px solid #023e8a;
-  color: rgba(48, 90, 167, 0.8);
-  font-family: Inter;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.38px;
-  width: 9vw;
-  margin-right: 0.3vw;
+  background: transparent;
+border-radius: 40px;
+border: 2px solid #023e8a;
+color: rgba(48, 90, 167, 0.8);
+font-family: Inter;
+font-size: 19px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.38px;
+width: 9vw;
+margin-right: 0.3vw;
 }
 
+.FullLog {
+height: 100vh;
+width: 100vw;
+background-color: rgba(44, 44, 45, 0.639);
+}
+.Placements {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
 /*!DARKMODE!*/
 .logincontainerdark {
-    background-color: #5E646E;
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #E0E4E8 ;
-    padding: 10px;
-    border-radius: 25px;
+  background-color: #5E646E;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #E0E4E8 ;
+  padding: 10px;
+  border-radius: 25px;
 }
 
 .loginbtndark {
-    background-color: #E0E4E8;
-    color: black;
-    border-radius: 20px;
-    width: 75px;
-    height: 50px;
-    border: none;
+  background-color: #E0E4E8;
+  color: black;
+  border-radius: 20px;
+  width: 75px;
+  height: 50px;
+  border: none;
 }
 .signupbtndark {
-    background: transparent;
-  border-radius: 40px;
-  border: 2px solid #E0E4E8;
-  color: #a7abae;
-  font-family: Inter;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.38px;
-  width: 9vw;
-  margin-right: 0.3vw;
+  background: transparent;
+border-radius: 40px;
+border: 2px solid #E0E4E8;
+color: #a7abae;
+font-family: Inter;
+font-size: 19px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.38px;
+width: 9vw;
+margin-right: 0.3vw;
 }
 /*!DARKMODE!*/

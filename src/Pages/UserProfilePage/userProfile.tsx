@@ -54,13 +54,14 @@ export function UserProfile() {
       document.body.classList.remove("dark-mode-body");
     };
   }, [darkMode]);
-
+let UsersNameLocal = sessionStorage.getItem("username")
+  let NameLocal =  sessionStorage.getItem("name")
+  let GenderLocal = sessionStorage.getItem("gender")
+  let UserPost = sessionStorage.getItem("Posts")
   return (
     <div className={wholeUserProfileClass}>
-      <Login></Login>
-      <Signup></Signup>
       <div className={containerClass}>
-        <h2 className={styles.HeadingCol}>@USERNAME</h2>
+        <h2 className={styles.HeadingCol}>@{UsersNameLocal}</h2>
         <div className={styles.icons}>
           {isEditingBio ? (
             <button className={styles.saveButton} onClick={handleEditClick}>
@@ -76,7 +77,7 @@ export function UserProfile() {
           src="public/Alicia.jpg"
           alt="Pretty Alien makeup look"
         />
-        <h2 className={styles.HeadingCol}>Name/Gender</h2>
+        <h2 className={styles.HeadingCol}>{NameLocal}/{GenderLocal}</h2>
         {/* Conditionally render a textarea or a div based on edit mode */}
         {isEditingBio ? (
           <textarea
