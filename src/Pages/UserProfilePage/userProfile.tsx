@@ -7,6 +7,7 @@ import EditSvg from "../../assets/Icons/Edit";
 import MoreSvg from "../../assets/Icons/More";
 
 export function UserProfile() {
+  // State for darkMode theme
   const { darkMode } = useTheme();
 
   // State for user information
