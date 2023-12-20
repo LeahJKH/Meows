@@ -4,14 +4,30 @@
   align-items: center;
   padding: 4%;
 }
-
+.postHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.postPic {
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+.username {
+  margin-bottom: 5px;
+}
 .postCard {
-  margin: 3em;
+  margin: 0.002em;
   border-radius: 23px;
   border: 1px solid rgba(2, 62, 138, 0.5);
   background: #f5f5ff;
   box-shadow: 0px 4px 4px 1px #e2eafc;
   width: 60em;
+  color: #023E8A;
 }
 
 .postPic {
@@ -32,6 +48,11 @@ p {
   align-items: center;
   justify-content: center;
   border-radius: 0 0 23px 23px;
+  background-color: #ABC4FF;
+  height: 2%;
+  border-bottom: 1px solid #023E8A;
+  border-left: 1px solid #023E8A;
+  border-right: 1px solid #023E8A;
 }
 .HeadingCol {
   color: #013374;
@@ -44,8 +65,21 @@ p {
   background: #3b3b40;
   box-shadow: 0px 4px 4px 1px #535359;
   width: 60em;
+  color: #E0E4E8;
 }
 .HeadingColdark {
   color: #e0e4e8;
+}
+.postFooterdark {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 23px 23px;
+  background-color: #BEBFBF;
+  height: 3%;
+  border-bottom: 1px solid #E0E4E8;
+  border-left: 1px solid #E0E4E8;
+  border-right: 1px solid #E0E4E8;
 }
 /*!DARKMODE!*/
