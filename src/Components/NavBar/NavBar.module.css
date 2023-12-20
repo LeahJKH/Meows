@@ -1,33 +1,34 @@
-.navBar {
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
   background-color: #abc4ff;
-  width: 100vw;
-  padding: 1vh;
-  display: inline-flex;
+  height: 16svh; /* Assuming "svh" is a valid custom unit introduced after 2022 */
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .leftNav {
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .rightNav {
-  display: inline-flex;
-  align-items: center;
-  margin-right: 3vw;
-}
-
-
-
-/*!DARKMODE!*/
-.navBardark {
-  background-color: #3B3B40;
-  width: 100vw;
-  padding: 1vh;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-right: 3%;
 }
 
-
-
-
+.navBardark {
+  background-color: #3b3b40;
+  padding: 1vh;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}

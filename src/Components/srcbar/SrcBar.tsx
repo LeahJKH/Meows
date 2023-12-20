@@ -1,12 +1,7 @@
 import React, { useState } from "react";
-
-import Style from "./SrcBar.module.css"
-import { useTheme } from '../../ThemeContext';
-
-
-import styles from "../NavBar/NavBar.module.css";
+import style from "./SrcBar.module.css";
+import { useTheme } from "../../ThemeContext";
 import SearchSvg from "../../assets/Icons/Search";
-
 
 interface SearchbarProps {
   setSearchTerm: React.Dispatch<React.SetStateAction<string>>;
@@ -29,24 +24,22 @@ const Searchbar = ({ setSearchTerm }: SearchbarProps) => {
     }
   }; //this makes so you can click the enter button on your keyboard and it searches
 
-
   const { darkMode } = useTheme();
-  const srcbtnCol = darkMode ? Style.srcbtndark : Style.srcbtn;
+  const srcbtnCol = darkMode ? style.srcbtndark : style.srcbtn;
   return (
     <div>
       <input
-        className={styles.searchBar}
+        className={style.searchBar}
         placeholder="Search..."
         type="text"
         value={searchValue}
         onChange={handleSearchChange}
         onKeyDown={handleKeyDown}
-      />
+      ></input>
 
       <button className={srcbtnCol} onClick={handleSearchClick}>
         <SearchSvg />
       </button>
-
     </div>
   );
 };

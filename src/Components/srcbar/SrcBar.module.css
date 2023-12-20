@@ -1,32 +1,41 @@
+.searchBar {
+  width: 200px;
+  height: 21.5px;
+  border-radius: 40px;
+  border: 2px solid #023e8a;
+  background-color: #bccdf7;
+  margin-right: 40px;
+}
+
+.searchBar::placeholder {
+  color: #023e8a;
+}
 .srcbtn {
-    
-  background: transparent;
+  position: absolute;
+  background: rgba(48, 90, 167, 0.8);
   border-radius: 40px;
   border: 2px solid #023e8a;
   color: rgba(48, 90, 167, 0.8);
-  font-family: Inter;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.38px;
-  width: 9vw;
+  height: 3vh;
+  width: 3vw;
   margin-right: 0.3vw;
+  cursor: pointer;
+  left: 92.1%;
+}
+.searchButton:hover {
+  background: aliceblue;
 }
 /*!DARKMODE!*/
 .srcbtndark {
-    
-    background: transparent;
-    border-radius: 40px;
-    border: 2px solid #E0E4E8;
-    color: rgba(166, 166, 166, 0.8);
-    font-family: Inter;
-    font-size: 19px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.38px;
-    width: 9vw;
-    margin-right: 0.3vw;
-  }
+  background: transparent;
+  border-radius: 40px;
+  border: 2px solid #e0e4e8;
+  color: rgba(166, 166, 166, 0.8);
+
+  height: 3vh;
+  width: 3vw;
+  margin-right: 0.3vw;
+  cursor: pointer;
+  left: 92.1%;
+}
 /*!DARKMODE!*/

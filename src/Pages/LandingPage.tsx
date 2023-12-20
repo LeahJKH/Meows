@@ -1,13 +1,15 @@
-import { useState, Dispatch, SetStateAction , useEffect} from "react";
+import { useState, Dispatch, SetStateAction, useEffect } from "react";
+import MeowModal from "../Components/MeowModal/MeowModal.tsx";
 import NavBar from "../Components/NavBar/NavBar.tsx";
 import PostCard from "../Components/PostCard/Postcard.tsx";
 import { PostInfo } from "../Data/posts.ts";
 import styles from "./LandingPage.module.css";
 import { Link } from "react-router-dom";
-import { useTheme } from '../ThemeContext';
-
+import { useTheme } from "../ThemeContext";
+import MeowsHead from "../assets/Icons/meowshead.tsx";
 
 export function LandingPage() {
+  const [isModalOpen, setModalOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredPosts = PostInfo.filter((post) =>
@@ -21,12 +23,12 @@ export function LandingPage() {
   const { darkMode } = useTheme();
   useEffect(() => {
     if (darkMode) {
-      document.body.classList.add('dark-mode-body');
+      document.body.classList.add("dark-mode-body");
     } else {
-      document.body.classList.remove('dark-mode-body');
+      document.body.classList.remove("dark-mode-body");
     }
     return () => {
-      document.body.classList.remove('dark-mode-body');
+      document.body.classList.remove("dark-mode-body");
     };
   }, [darkMode]);
   return (
@@ -47,7 +49,7 @@ export function LandingPage() {
         </div>
 
         <div className={styles.navContainer}>
-          <img className={styles.catImage} src="/cat.svg" alt="cat" />
+          <MeowsHead />
           <ul className={styles.navLinkContainer}>
             <li>
               <Link className={styles.linkDecoration} to={"/"}>
@@ -90,12 +92,17 @@ export function LandingPage() {
               />{" "}
               More
             </li>
-        
           </ul>
-          <button className={styles.meowButton}>Meow</button>
+          <button
+            className={styles.meowButton}
+            onClick={() => setModalOpen(true)}
+          >
+            Meow
+          </button>
         </div>
       </div>
 
+      {isModalOpen && <MeowModal onClose={() => setModalOpen(false)} />}
       <div className={styles.feedMiddleContainer}>
         <h1 className={styles.feedTitle}>FEED</h1>
         <div className={styles.postCardContainer}>
@@ -114,18 +121,19 @@ export function LandingPage() {
       </div>
 
       <div className={styles.feedRightContainer}>
-
-        <input className={styles.feedRightInput} type="text" placeholder="Search Meows" value="Search Meows"  />
+        <input
+          className={styles.feedRightInput}
+          type="text"
+          placeholder="Search Meows"
+        />
 
         <div className={styles.feedTrendsContainer}>
-
           <div className={styles.feedTitleIconContainer}>
             <h1>Paris Trend</h1>
             <img src="public/icon.svg" alt="icon" />
           </div>
 
           <div className={styles.trendsContainer}>
-
             <div className={styles.trendBoks}>
               <div className={styles.trendingAndIcon}>
                 <p className={styles.grayText}>1. Trending</p>
@@ -182,9 +190,6 @@ export function LandingPage() {
 
             <button className={styles.showButton}>Show more</button>
           </div>
-
-          
-
         </div>
       </div>
     </main>

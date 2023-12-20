@@ -1,6 +1,7 @@
 [
     {
       "name": "kristina",
+      "username": "",
       "email": "Kristina@meow.org",
       "password": "Meowformebbg",
       "Gender": "Female",
@@ -9,14 +10,16 @@
     },
     {
       "name": "Leah",
+      "username": "CyberYoi",
       "email": "Leah@meow.org",
-      "password": "dobbelmeow",
+      "password": "dobbelMeow",
       "Gender": "Female",
       "Birthday": "23,02,03",
       "posts": [2, 5, 8]
     },
     {
       "name": "Admin",
+      "username": "Admin",
       "email": "admin@meow.org",
       "password": "Admin",
       "Gender": "None",
@@ -25,11 +28,252 @@
     },
     {
         "name": "Kai",
+        "username": "",
         "email": "kai.kodehode@gmail.com",
         "password": "Kodehode#23",
         "Gender": "Male",
-        "Birthday": "31,03,85"
-        
+        "Birthday": "31,03,85",
+        "posts": [18]
+      }, 
+      {
+        "name": "",
+        "username": "",
+        "email": "",
+        "password": "",
+        "Gender": "",
+        "Birthday": ""
+      },
+      {
+        "name": "",
+        "username": "",
+        "email": "",
+        "password": "",
+        "Gender": "",
+        "Birthday": ""
+      },
+      {
+        "name": "Jack",
+        "username": "TechEnigma",
+        "email": "Jack@ciphermail.com",
+        "password": "SecureCipher123",
+        "gender": "Male",
+        "birthday": "14,09,95"
+      },
+      {
+        "name": "Emily",
+        "username": "CodeNinja89",
+        "email": "Emily@digitalwave.net",
+        "password": "SecretCode@89",
+        "gender": "Female",
+        "birthday": "08,12,88"
+      },
+      {
+        "name": "Rita Linn",
+        "username": "ritalin",
+        "email": "Rita@digitalwave.net",
+        "password": "JegErHyper!69420",
+        "gender": "Female",
+        "birthday": "29,02,92"
+      },
+      {
+        "name": "Liam",
+        "username": "QuantumByte",
+        "email": "Liam@quantummail.io",
+        "password": "EntangledPassw0rd",
+        "gender": "Male",
+        "birthday": "30,05,00"
+      },
+      {
+        "name": "Sophia",
+        "username": "PixelGeek21",
+        "email": "Sophia@geekymail.com",
+        "password": "PixelPerfect21!",
+        "gender": "Female",
+        "birthday": "17,11,96"
+      },
+      {
+        "name": "Oliver",
+        "username": "ByteMaster",
+        "email": "Oliver@codemail.net",
+        "password": "MasterCode123",
+        "gender": "Male",
+        "birthday": "25,06,91"
+      },
+      {
+        "name": "Ava",
+        "username": "TechWhiz23",
+        "email": "Ava@digitechmail.com",
+        "password": "WhizKid@23",
+        "gender": "Female",
+        "birthday": "12,04,87"
+      },
+      {
+        "name": "Noah",
+        "username": "DataGenius",
+        "email": "Noah@ciphergen.net",
+        "password": "GeniusData456",
+        "gender": "Male",
+        "birthday": "19,08,94"
+      },
+      {
+        "name": "Emma",
+        "username": "PixelPrincess",
+        "email": "Emma@techwave.io",
+        "password": "PrincessPixel789",
+        "gender": "Female",
+        "birthday": "03,10,99"
+      },
+      {
+        "name": "William",
+        "username": "CyberSavvy",
+        "email": "William@codecraft.com",
+        "password": "SavvyWilliam22",
+        "gender": "Male",
+        "birthday": "28,12,92"
+      },
+      {
+        "name": "Sophie",
+        "username": "DigitalDreamer",
+        "email": "Sophie@dreammail.net",
+        "password": "Dreamer2023!",
+        "gender": "Female",
+        "birthday": "15,02,97"
+      },
+      {
+        "name": "James",
+        "username": "ByteWizard77",
+        "email": "James@cipherbyte.com",
+        "password": "WizardJames77",
+        "gender": "Male",
+        "birthday": "07,11,89"
+      },
+      {
+        "name": "Charlotte",
+        "username": "CodeQueen22",
+        "email": "Charlotte@techqueen.io",
+        "password": "QueenCode@22",
+        "gender": "Female",
+        "birthday": "22,05,00"
+      },
+      {
+        "name": "Benjamin",
+        "username": "DataMaestro",
+        "email": "Benjamin@datagenius.net",
+        "password": "Maestro1234!",
+        "gender": "Male",
+        "birthday": "09,03,96"
+      },
+      {
+        "name": "Amelia",
+        "username": "TechWhizKid",
+        "email": "Amelia@bytekid.com",
+        "password": "WhizKid12345",
+        "gender": "Female",
+        "birthday": "18,09,93"
+      },
+      {
+        "name": "Lucas",
+        "username": "PixelPro123",
+        "email": "Lucas@digitalpro.net",
+        "password": "ProLucas456",
+        "gender": "Male",
+        "birthday": "02,07,98"
+      },
+      {
+        "name": "Mia",
+        "username": "CodeExplorer",
+        "email": "Mia@exploracode.com",
+        "password": "ExploreMia77",
+        "gender": "Female",
+        "birthday": "10,01,92"
+      },
+      {
+        "name": "Henry",
+        "username": "CyberWizard",
+        "email": "Henry@bytecraft.io",
+        "password": "WizardHenry!",
+        "gender": "Male",
+        "birthday": "27,04,85"
+      },
+      {
+        "name": "Ella",
+        "username": "TechSiren99",
+        "email": "Ella@sirentech.net",
+        "password": "SirenElla1999",
+        "gender": "Female",
+        "birthday": "05,08,01"
+      },
+      {
+        "name": "Alexander",
+        "username": "DataGenie",
+        "email": "Alexander@geniebyte.com",
+        "password": "GenieAlex123",
+        "gender": "Male",
+        "birthday": "11,12,03"
+      },
+      {
+        "name": "Grace",
+        "username": "CodeGraceful",
+        "email": "Grace@cybergrace.io",
+        "password": "GracefulCode22",
+        "gender": "Female",
+        "birthday": "20,03,96"
+      },
+      {
+        "name": "Daniel",
+        "username": "TechEnthusiast",
+        "email": "Daniel@enthusitech.com",
+        "password": "EnthusiastDan",
+        "gender": "Male",
+        "birthday": "16,10,00"
+      },
+      {
+        "name": "Lily",
+        "username": "ByteLily",
+        "email": "Lily@bytequeen.net",
+        "password": "Lily1234@",
+        "gender": "Female",
+        "birthday": "24,07,91"
+      },
+      {
+        "name": "Alex",
+        "username": "TechWhiz123",
+        "email": "Alex@cybermail.net",
+        "password": "Whiz123Tech!",
+        "birthday": "11,08,92",
+        "gender": "nonbinary"
+      },
+      {
+        "name": "Jordan",
+        "username": "CodeMaster88",
+        "email": "Jordan@digitalbyte.com",
+        "password": "MasterCode88!",
+        "birthday": "03,05,95",
+        "gender": "nonbinary"
+      },
+      {
+        "name": "Casey",
+        "username": "CipherGuru",
+        "email": "Casey@cyphergen.net",
+        "password": "GuruCipher2023",
+        "birthday": "19,11,87",
+        "gender": "nonbinary"
+      },
+      {
+        "name": "Riley",
+        "username": "PixelSavant",
+        "email": "Riley@techsavvy.io",
+        "password": "SavvyPixel2022",
+        "birthday": "27,02,99",
+        "gender": "nonbinary"
+      },
+      {
+        "name": "Taylor",
+        "username": "ByteCoder",
+        "email": "Taylor@bytecraft.com",
+        "password": "CoderTaylor!",
+        "birthday": "14,09,94",
+        "gender": "do not wish to enter"
       }
   ]
   
