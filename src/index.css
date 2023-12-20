@@ -4,17 +4,17 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100vw;
   background-color: #edf2fb;
   background-image: url("../public/paws.png");
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 .dark-mode-body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100vw;
   background-color: #5e646e;
   background-image: url("../public/paws.png");
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
