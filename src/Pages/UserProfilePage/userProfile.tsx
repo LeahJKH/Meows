@@ -7,29 +7,69 @@ import EditSvg from "../../assets/Icons/Edit";
 import MoreSvg from "../../assets/Icons/More";
 
 export function UserProfile() {
+  // State for darkMode theme
   const { darkMode } = useTheme();
+
+  // State for user information
+  const [username, setUsername] = useState("@USERNAME");
+  const [nameGender, setNameGender] = useState("Name/Gender");
 
   // State for the bio content
   const [bio, setBio] = useState(() => {
     const storedBio = localStorage.getItem("userBio");
     return storedBio || "Fill in bio";
   });
-  // State to track whether the bio is in edit mode
-  const [isEditingBio, setIsEditingBio] = useState(false);
+
+  // State to track whether user info is in edit mode
+  const [isEditingInfo, setIsEditingInfo] = useState(false);
 
   // Handler for updating the bio
   const handleBioChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
     setBio(event.target.value);
   };
 
+  // Handler for updating username and name/gender
+  const handleInfoChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    if (name === "username") {
+      setUsername(value);
+    } else if (name === "nameGender") {
+      setNameGender(value);
+    }
+  };
+
   // Handler for toggling edit mode
   const handleEditClick = () => {
-    setIsEditingBio(!isEditingBio);
+    setIsEditingInfo(!isEditingInfo);
+  };
+
+  // Save changes
+  const handleSaveClick = () => {
+    localStorage.setItem("username", username);
+    localStorage.setItem("nameGender", nameGender);
+    setIsEditingInfo(false);
   };
 
   useEffect(() => {
     localStorage.setItem("userBio", bio);
   }, [bio]);
+
+  useEffect(() => {
+    // Load user information from local storage
+    const storedUsername = localStorage.getItem("username");
+    const storedNameGender = localStorage.getItem("nameGender");
+
+    if (storedUsername) {
+      setUsername(storedUsername);
+    }
+
+    if (storedNameGender) {
+      setNameGender(storedNameGender);
+    }
+
+    const storedBio = localStorage.getItem("userBio");
+    setBio(storedBio || "Fill in bio");
+  }, []);
 
   const containerClass = darkMode
     ? styles.profilePageContainerdark
@@ -41,6 +81,7 @@ export function UserProfile() {
   const wholeUserProfileClass = darkMode
     ? styles.wholeUserProfiledark
     : styles.wholeUserProfile;
+
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add("dark-mode-body");
@@ -77,10 +118,21 @@ export function UserProfile() {
   return (
     <div className={wholeUserProfileClass}>
       <div className={containerClass}>
-        <h2 className={styles.HeadingCol}>@{UsersNameLocal}</h2>
+        <h2 className={styles.HeadingCol}>
+          {isEditingInfo ? (
+            <input
+              type="text"
+              name="username"
+              value={UsersNameLocal}
+              onChange={handleInfoChange}
+            />
+          ) : (
+            username
+          )}
+        </h2>
         <div className={styles.icons}>
-          {isEditingBio ? (
-            <button className={styles.saveButton} onClick={handleEditClick}>
+          {isEditingInfo ? (
+            <button className={styles.saveButton} onClick={handleSaveClick}>
               Save
             </button>
           ) : (
@@ -93,9 +145,19 @@ export function UserProfile() {
           src="public/Alicia.jpg"
           alt="Pretty Alien makeup look"
         />
-        <h2 className={styles.HeadingCol}>{NameLocal}/{GenderLocal}</h2>
-        {/* Conditionally render a textarea or a div based on edit mode */}
-        {isEditingBio ? (
+        <h2 className={styles.HeadingCol}>
+          {isEditingInfo ? (
+            <input
+              type="text"
+              name="nameGender"
+              value={nameGender}
+              onChange={handleInfoChange}
+            />
+          ) : (
+            nameGender
+          )}
+        </h2>
+        {isEditingInfo ? (
           <textarea
             className={styles.bioTextarea}
             value={bio}
