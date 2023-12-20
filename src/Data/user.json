@@ -1,7 +1,7 @@
 [
     {
       "name": "kristina",
-      "username": "",
+      "username": "ItsKriss",
       "email": "Kristina@meow.org",
       "password": "Meowformebbg",
       "Gender": "Female",
@@ -35,22 +35,6 @@
         "Birthday": "31,03,85",
         "posts": [18]
       }, 
-      {
-        "name": "",
-        "username": "",
-        "email": "",
-        "password": "",
-        "Gender": "",
-        "Birthday": ""
-      },
-      {
-        "name": "",
-        "username": "",
-        "email": "",
-        "password": "",
-        "Gender": "",
-        "Birthday": ""
-      },
       {
         "name": "Jack",
         "username": "TechEnigma",
