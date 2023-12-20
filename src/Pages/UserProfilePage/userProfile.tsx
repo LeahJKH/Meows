@@ -51,14 +51,28 @@ export function UserProfile() {
       document.body.classList.remove("dark-mode-body");
     };
   }, [darkMode]);
-let UsersNameLocal = sessionStorage.getItem("username")
-  let NameLocal =  sessionStorage.getItem("name")
-  let GenderLocal = sessionStorage.getItem("gender")
-  let UserPost = sessionStorage.getItem("Posts")
+  const UsersNameLocal = sessionStorage.getItem("username")
+  const NameLocal =  sessionStorage.getItem("name")
+  const GenderLocal = sessionStorage.getItem("gender")
+  const storedPostsString = sessionStorage.getItem("Posts");
+  const storedPostIds = storedPostsString ? JSON.parse(storedPostsString) : [];
+
+
+  const storedPosts = storedPostIds.map((postId: Array<string>) => {
+      return (
+        <PostCard
+          key={PostInfo[postId].id}
+          username={NameLocal}
+          nickname={UsersNameLocal}
+          title={PostInfo[postId].title}
+          content={PostInfo[postId].content}
+        />
+      );
+  });
 
   if (!sessionStorage.getItem("username")) {
     location.href ="/LogIn"
-  }
+  } 
 
   return (
     <div className={wholeUserProfileClass}>
@@ -95,13 +109,7 @@ let UsersNameLocal = sessionStorage.getItem("username")
         <h1>YOUR ACTIVITY</h1>
       </div>
       <div className={styles.userActivityFeed}>
-        <PostCard
-          username=""
-          nickname=""
-          key={PostInfo[1].id}
-          title={PostInfo[1].title}
-          content={PostInfo[1].content}
-        />
+        {storedPosts}
       </div>
     </div>
   );
