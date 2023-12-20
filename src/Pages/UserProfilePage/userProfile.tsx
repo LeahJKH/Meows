@@ -13,7 +13,6 @@ export function UserProfile() {
   // State for user information
   const [username, setUsername] = useState("@USERNAME");
   const [nameGender, setNameGender] = useState("Name/Gender");
-
   // State for the bio content
   const [bio, setBio] = useState(() => {
     const storedBio = localStorage.getItem("userBio");
@@ -54,10 +53,13 @@ export function UserProfile() {
     localStorage.setItem("userBio", bio);
   }, [bio]);
 
+ 
   useEffect(() => {
     // Load user information from local storage
+   
     const storedUsername = localStorage.getItem("username");
     const storedNameGender = localStorage.getItem("nameGender");
+   
 
     if (storedUsername) {
       setUsername(storedUsername);
@@ -123,7 +125,7 @@ export function UserProfile() {
             <input
               type="text"
               name="username"
-              value={UsersNameLocal}
+              value={username}
               onChange={handleInfoChange}
             />
           ) : (
