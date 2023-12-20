@@ -53,13 +53,11 @@ export function UserProfile() {
     localStorage.setItem("userBio", bio);
   }, [bio]);
 
- 
   useEffect(() => {
     // Load user information from local storage
-   
+
     const storedUsername = localStorage.getItem("username");
     const storedNameGender = localStorage.getItem("nameGender");
-   
 
     if (storedUsername) {
       setUsername(storedUsername);
@@ -94,28 +92,26 @@ export function UserProfile() {
       document.body.classList.remove("dark-mode-body");
     };
   }, [darkMode]);
-  const UsersNameLocal = sessionStorage.getItem("username")
-  const NameLocal =  sessionStorage.getItem("name")
-  const GenderLocal = sessionStorage.getItem("gender")
+  const UsersNameLocal = sessionStorage.getItem("username");
+  const NameLocal = sessionStorage.getItem("name");
   const storedPostsString = sessionStorage.getItem("Posts");
   const storedPostIds = storedPostsString ? JSON.parse(storedPostsString) : [];
 
-
   const storedPosts = storedPostIds.map((postId: Array<string>) => {
-      return (
-        <PostCard
-          key={PostInfo[postId].id}
-          username={NameLocal}
-          nickname={UsersNameLocal}
-          title={PostInfo[postId].title}
-          content={PostInfo[postId].content}
-        />
-      );
+    return (
+      <PostCard
+        key={PostInfo[postId].id}
+        username={NameLocal}
+        nickname={UsersNameLocal}
+        title={PostInfo[postId].title}
+        content={PostInfo[postId].content}
+      />
+    );
   });
 
   if (!sessionStorage.getItem("username")) {
-    location.href ="/LogIn"
-  } 
+    location.href = "/LogIn";
+  }
 
   return (
     <div className={wholeUserProfileClass}>
@@ -172,9 +168,7 @@ export function UserProfile() {
       <div className={headerClass}>
         <h1>YOUR ACTIVITY</h1>
       </div>
-      <div className={styles.userActivityFeed}>
-        {storedPosts}
-      </div>
+      <div className={styles.userActivityFeed}>{storedPosts}</div>
     </div>
   );
 }
