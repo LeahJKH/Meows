@@ -37,8 +37,8 @@ const PostCard: React.FC<PostCardProps> = ({
             alt="Pretty Alien makeup look"
           />
           <div className={styles.userInfo}>
-            <span className={styles.username}>{username}</span>
-            <span className={styles.nickname} >{nickname}</span>
+          <span className={styles.nickname} >{nickname}</span>
+            <span className={styles.username}>@{username}</span>
           </div>
         </div>
         <h2 className={HeadCol}>{title}</h2>
