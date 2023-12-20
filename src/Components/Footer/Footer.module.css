@@ -6,7 +6,7 @@
   padding: 0;
 }
 .footer > h3 {
- margin-top: 0;
+  margin-top: 0;
 }
 
 .pFooter {
@@ -14,7 +14,7 @@
 }
 /*!DARKMODE!*/
 .footerdark {
-  background-color: #3B3B40;
+  background-color: #3b3b40;
   width: 100vw;
   height: 10em;
   margin: 0;
