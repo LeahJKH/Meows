@@ -1,7 +1,7 @@
 import { ThemeProvider } from './ThemeContext';
 import { LayoutBase } from './Pages/LayoutBase';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import { LandingPage } from './Pages/LandingPage';
+import LandingPage from './Pages/LandingPage';
 import { Discover } from './Pages/DiscoverPage/discoverPage';
 import { UserProfile } from './Pages/UserProfilePage/userProfile';
 import Signup from './Components/Signup/Signup';
