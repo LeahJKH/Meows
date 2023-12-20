@@ -25,7 +25,7 @@ const PostCard: React.FC<PostCardProps> = ({
   const { darkMode } = useTheme();
   const PostCol = darkMode ? styles.postCarddark : styles.postCard;
  const HeadCol = darkMode ? styles.HeadingColdark : styles.HeadingCol;    
-
+ const postFoot = darkMode ? styles.postFooterdark : styles.postFooter;
   return (
     
     <div className={styles.postCardContainer}>
@@ -44,7 +44,7 @@ const PostCard: React.FC<PostCardProps> = ({
         <h2 className={HeadCol}>{title}</h2>
 
         <p>{content}</p>
-        <footer className={styles.postFooter}>
+        <footer className={postFoot}>
           <HeartSvg />
           <SavedSvg />
         </footer>
