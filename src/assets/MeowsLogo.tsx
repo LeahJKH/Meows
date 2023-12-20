@@ -21,14 +21,14 @@ const MeowsLogo: React.FC<MeowsLogoProps> = ({ onClick }) => {
               fill="#023E8A"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M59.9037 72.4799C60.0643 70.8287 60.1479 69.1323 60.1479 67.4021C60.1479 50.6176 52.2798 37.0111 42.5739 37.0111C32.868 37.0111 24.9999 50.6176 24.9999 67.4021C24.9999 69.1323 25.0835 70.8287 25.2441 72.4799C30.6717 74.1126 36.503 74.9999 42.5739 74.9999C48.6448 74.9999 54.4761 74.1126 59.9037 72.4799ZM48.5271 15.8102C48.5271 15.8102 51.9633 8.97659 55.8062 6.62012C55.8062 6.62012 59.9408 16.0043 57.7507 23.7887"
               fill="#023E8A"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M37.301 15.8102C37.301 15.8102 33.8648 8.97659 30.0219 6.62012C30.0219 6.62012 25.8873 16.0043 28.0774 23.7887"
               fill="#023E8A"
             />
@@ -36,15 +36,15 @@ const MeowsLogo: React.FC<MeowsLogoProps> = ({ onClick }) => {
               d="M75.9168 1C68.1385 1 61.8335 5.32949 61.8335 10.6586C61.8335 14.026 64.3613 16.9873 68.1818 18.7116L66.9107 23.1223C66.8944 23.1773 66.8973 23.2354 66.9191 23.289C66.9409 23.3426 66.9806 23.3894 67.0332 23.4235C67.0858 23.4576 67.1488 23.4775 67.2145 23.4806C67.2801 23.4837 67.3453 23.4699 67.4018 23.4409L73.7501 20.1797C74.4686 20.2605 75.1923 20.3022 75.9168 20.3047C83.6951 20.3047 90.0001 15.9877 90.0001 10.6586C90.0001 5.32949 83.6951 1 75.9168 1Z"
               fill="#EDF2FB"
               stroke="#023E8A"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </g>
           <path
             d="M45.1518 23.8691C45.5138 23.3389 46.3047 23 47.0748 23C47.8449 23 48.638 23.3389 49 23.867M38.8482 23.8691C38.4862 23.3389 37.6953 23 36.9252 23C36.1551 23 35.362 23.3389 35 23.867M35.498 29.9903C35.4865 30.3817 35.562 30.7712 35.7201 31.1359C35.8782 31.5006 36.1157 31.833 36.4187 32.1135C36.7216 32.3941 37.0837 32.6171 37.4838 32.7693C37.8838 32.9216 38.3136 33 38.7479 33C39.1821 33 39.6119 32.9216 40.0119 32.7693C40.412 32.6171 40.7741 32.3941 41.0771 32.1135C41.38 31.833 41.6175 31.5006 41.7756 31.1359C41.9337 30.7712 42.0093 30.3817 41.9977 29.9903C41.9977 30.7678 42.3402 31.5135 42.9499 32.0633C43.5596 32.6131 44.3865 32.9219 45.2487 32.9219C46.1109 32.9219 46.9378 32.6131 47.5475 32.0633C48.1572 31.5135 48.4997 30.7678 48.4997 29.9903"
             stroke="#BBADFF"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <ellipse cx="42.5" cy="29" rx="1.5" ry="1" fill="#BBADFF" />
           <mask
@@ -72,8 +72,8 @@ const MeowsLogo: React.FC<MeowsLogoProps> = ({ onClick }) => {
             <path
               d="M29 68C27.5143 68 22.3322 65.239 21.108 64.6352C19.0839 63.637 17.0401 62.4433 15.4609 60.9782C14.6241 60.2019 14.0944 59.2632 13.4388 58.3842C12.7064 57.4023 12.2778 56.2413 11.752 55.1786C10.8841 53.4245 10.7755 51.7091 10.7755 49.8551C10.7755 48.3195 11.3453 46.874 11.5548 45.3484C11.6692 44.515 11.5745 43.6366 11.5745 42.7996C11.5745 42.0888 11.4677 41.4333 10.9037 40.8787C10.5192 40.5005 10.242 40.0331 10.0061 39.5776C9.85357 39.2831 9.60631 38.7867 9.3551 38.5515C9.00767 38.2262 9 37.4234 9 37"
               stroke="#023E8A"
-              stroke-width="3"
-              stroke-linecap="round"
+              strokeWidth="3"
+              strokeLinecap="round"
             />
           </g>
           <defs>
@@ -84,9 +84,9 @@ const MeowsLogo: React.FC<MeowsLogoProps> = ({ onClick }) => {
               width="73.5"
               height="82.5"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -119,9 +119,9 @@ const MeowsLogo: React.FC<MeowsLogoProps> = ({ onClick }) => {
               width="31"
               height="42"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"

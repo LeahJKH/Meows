@@ -7,27 +7,21 @@ import EditSvg from "../../assets/Icons/Edit";
 import MoreSvg from "../../assets/Icons/More";
 
 export function UserProfile() {
-  // State for darkMode theme
   const { darkMode } = useTheme();
 
-  // State for user information
   const [username, setUsername] = useState("@USERNAME");
   const [nameGender, setNameGender] = useState("Name/Gender");
-  // State for the bio content
   const [bio, setBio] = useState(() => {
     const storedBio = localStorage.getItem("userBio");
     return storedBio || "Fill in bio";
   });
 
-  // State to track whether user info is in edit mode
   const [isEditingInfo, setIsEditingInfo] = useState(false);
 
-  // Handler for updating the bio
   const handleBioChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
     setBio(event.target.value);
   };
 
-  // Handler for updating username and name/gender
   const handleInfoChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     if (name === "username") {
@@ -37,12 +31,10 @@ export function UserProfile() {
     }
   };
 
-  // Handler for toggling edit mode
   const handleEditClick = () => {
     setIsEditingInfo(!isEditingInfo);
   };
 
-  // Save changes
   const handleSaveClick = () => {
     localStorage.setItem("username", username);
     localStorage.setItem("nameGender", nameGender);
@@ -73,16 +65,11 @@ export function UserProfile() {
     setBio(storedBio || "Fill in bio");
   }, []);
 
-  const containerClass = darkMode
-    ? styles.profilePageContainerdark
-    : styles.profilePageContainer;
+  
+  const containerClass = darkMode ? styles.profilePageContainerdark : styles.profilePageContainer;
   const imageClass = darkMode ? styles.profileImagedark : styles.profileImage;
-  const headerClass = darkMode
-    ? styles.userActivityHeaderdark
-    : styles.userActivityHeader;
-  const wholeUserProfileClass = darkMode
-    ? styles.wholeUserProfiledark
-    : styles.wholeUserProfile;
+  const headerClass = darkMode ? styles.userActivityHeaderdark : styles.userActivityHeader;
+  const wholeUserProfileClass = darkMode ? styles.wholeUserProfiledark : styles.wholeUserProfile;
 
   useEffect(() => {
     if (darkMode) {
@@ -94,6 +81,7 @@ export function UserProfile() {
       document.body.classList.remove("dark-mode-body");
     };
   }, [darkMode]);
+
   const UsersNameLocal = sessionStorage.getItem("username")
   const NameLocal =  sessionStorage.getItem("name")
   const GenderLocal = sessionStorage.getItem("gender")

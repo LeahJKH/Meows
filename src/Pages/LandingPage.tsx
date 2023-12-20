@@ -1,6 +1,5 @@
-import { useState, Dispatch, SetStateAction, useEffect } from "react";
+import { useState, useEffect } from "react";
 import MeowModal from "../Components/MeowModal/MeowModal.tsx";
-import NavBar from "../Components/NavBar/NavBar.tsx";
 import PostCard from "../Components/PostCard/Postcard.tsx";
 import { PostInfo } from "../Data/posts.ts";
 import UserData from "../Data/user.json"
@@ -8,19 +7,17 @@ import styles from "./LandingPage.module.css";
 import { Link } from "react-router-dom";
 import { useTheme } from "../ThemeContext";
 import MeowsHead from "../assets/Icons/meowshead.tsx";
+import { useLocation } from 'react-router-dom';
+import Searchbar from "../Components/srcbar/SrcBar.tsx";
 
 export default function LandingPage() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
+  
 
-  const filteredPosts = PostInfo.filter((post) =>
-    post.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-  {
-    <NavBar
-      setSearchTerm={setSearchTerm as Dispatch<SetStateAction<string>>}
-    />;
-  }
+  const location = useLocation();
+  const { state } = location;
+  const filteredPosts = state && state.filteredPosts ? state.filteredPosts : [];
   const { darkMode } = useTheme();
   useEffect(() => {
     if (darkMode) {
@@ -32,51 +29,74 @@ export default function LandingPage() {
       document.body.classList.remove("dark-mode-body");
     };
   }, [darkMode]);
+  const containerClass = darkMode ? styles.userContainerdark : styles.userContainer;
+  const mailClass = darkMode ? styles.userMaildark : styles.userMail;
+  const nameClass = darkMode ? styles.userNamedark : styles.userName;
+  const buttonsClass = darkMode ? styles.userButtonsdark : styles.userButtons;
+  const navContainerClass = darkMode ? styles.navContainerdark : styles.navContainer;
+  const navLinkContainerClass = darkMode ? styles.navLinkContainerdark : styles.navLinkContainer;
+  const linkDecorationClass = darkMode ? styles.linkDecorationdark : styles.linkDecoration;
+  const meowButtonClass = darkMode ? styles.meowButtondark : styles.meowButton;
+  const feedTitleClass = darkMode ? styles.feedTitledark : styles.feedTitle;
+  const feedRightInputClass = darkMode ? styles.feedRightInputdark : styles.feedRightInput;
+  const feedTrendsContainerClass = darkMode ? styles.feedTrendsContainerdark : styles.feedTrendsContainer;
+  const feedTitleIconContainerClass = darkMode ? styles.feedTitleIconContainerdark : styles.feedTitleIconContainer;
+  const trendBoxClass = darkMode ? styles.trendBoksdark : styles.trendBox;
+  const grayTextClass = darkMode ? styles.grayTextdark : styles.grayText;
+  const blueTextClass = darkMode ? styles.blueTextdark : styles.blueText;
+  const showButtonClass = darkMode ? styles.showButtondark : styles.showButton;
+
   const UsersNameLocal = sessionStorage.getItem("username")
   const NameLocal =  sessionStorage.getItem("name")
   
+  const renderFilteredPosts = () => {
+    // Apply the search term filter here
+    const filtered = PostInfo.filter(post =>
+      post.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
-  const userPosts = UserData.map(user => (
-    user.posts ? user.posts.map(postId => {
-      const foundPost = PostInfo.find(post => post.id === postId);
-      if (foundPost) {
-        console.log("user:", user); 
+    return filtered.map(post => {
+      const user = UserData.find(userData => userData.posts.includes(post.id));
+
+      if (user) {
         return (
           <PostCard
-            key={foundPost.id}
-            title={foundPost.title}
-            content={foundPost.content}
-            username={user.username} 
+            key={post.id}
+            title={post.title}
+            content={post.content}
+            username={user.username}
             nickname={user.name}
           />
         );
       }
       return null;
-    }) : null
-  ));
+    });
+  };
+
 
   return (
     <main className={styles.feedContainer}>
       <div className={styles.feedLeftContainer}>
-        <div className={styles.userContainer}>
+      <Searchbar setSearchTerm={setSearchTerm} />
+        <div className={containerClass}>
           <div className={styles.imageNameContainer}>
             <img src="public/image-11.png" alt="image" />
             <div>
-              <p className={styles.userMail}>@{UsersNameLocal}</p>
-              <h2 className={styles.userName}>{NameLocal}</h2>
+              <p className={mailClass}>@{UsersNameLocal}</p>
+              <h2 className={nameClass}>{NameLocal}</h2>
             </div>
           </div>
-          <button className={styles.userButtons}>Following</button>
-          <button className={styles.userButtons}>Followers</button>
-          <button className={styles.userButtons}>Likes</button>
-          <button className={styles.userButtons}>Reports</button>
+          <button className={buttonsClass}>Following</button>
+          <button className={buttonsClass}>Followers</button>
+          <button className={buttonsClass}>Likes</button>
+          <button className={buttonsClass}>Reports</button>
         </div>
 
-        <div className={styles.navContainer}>
+        <div className={navContainerClass}>
           <MeowsHead />
-          <ul className={styles.navLinkContainer}>
+          <ul className={navLinkContainerClass}>
             <li>
-              <Link className={styles.linkDecoration} to={"/"}>
+              <Link className={linkDecorationClass} to={"/"}>
                 <img
                   className={styles.linkImage}
                   src="public/house.svg"
@@ -86,7 +106,7 @@ export default function LandingPage() {
               </Link>
             </li>
             <li>
-              <Link className={styles.linkDecoration} to={"/discover"}>
+              <Link className={linkDecorationClass} to={"/discover"}>
                 <img
                   className={styles.linkImage}
                   src="public/hashtag.svg"
@@ -99,7 +119,7 @@ export default function LandingPage() {
             <li className={styles.withoutIcon}>Messages</li>
             <li className={styles.withoutIcon}>Bookmarks</li>
             <li>
-              <Link className={styles.linkDecoration} to={"/userprofile"}>
+              <Link className={linkDecorationClass} to={"/userprofile"}>
                 <img
                   className={styles.linkImage}
                   src="public/image.png"
@@ -118,7 +138,7 @@ export default function LandingPage() {
             </li>
           </ul>
           <button
-            className={styles.meowButton}
+            className={meowButtonClass}
             onClick={() => setModalOpen(true)}
           >
             Meow
@@ -128,9 +148,9 @@ export default function LandingPage() {
 
       {isModalOpen && <MeowModal onClose={() => setModalOpen(false)} />}
       <div className={styles.feedMiddleContainer}>
-        <h1 className={styles.feedTitle}>FEED</h1>
+        <h1 className={feedTitleClass}>FEED</h1>
         <div className={styles.postCardContainer}>
-          {userPosts}
+        {renderFilteredPosts()}
         </div>
       </div>
 
