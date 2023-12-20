@@ -3,12 +3,13 @@ import MeowModal from "../Components/MeowModal/MeowModal.tsx";
 import NavBar from "../Components/NavBar/NavBar.tsx";
 import PostCard from "../Components/PostCard/Postcard.tsx";
 import { PostInfo } from "../Data/posts.ts";
+import UserData from "../Data/user.json"
 import styles from "./LandingPage.module.css";
 import { Link } from "react-router-dom";
 import { useTheme } from "../ThemeContext";
 import MeowsHead from "../assets/Icons/meowshead.tsx";
 
-export function LandingPage() {
+export default function LandingPage() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -34,6 +35,26 @@ export function LandingPage() {
   const UsersNameLocal = sessionStorage.getItem("username")
   const NameLocal =  sessionStorage.getItem("name")
   
+
+  const userPosts = UserData.map(user => (
+    user.posts ? user.posts.map(postId => {
+      const foundPost = PostInfo.find(post => post.id === postId);
+      if (foundPost) {
+        console.log("user:", user); 
+        return (
+          <PostCard
+            key={foundPost.id}
+            title={foundPost.title}
+            content={foundPost.content}
+            username={user.username} 
+            nickname={user.name}
+          />
+        );
+      }
+      return null;
+    }) : null
+  ));
+
   return (
     <main className={styles.feedContainer}>
       <div className={styles.feedLeftContainer}>
@@ -109,17 +130,7 @@ export function LandingPage() {
       <div className={styles.feedMiddleContainer}>
         <h1 className={styles.feedTitle}>FEED</h1>
         <div className={styles.postCardContainer}>
-          {filteredPosts.map(
-            (post: { id: number; title: string; content: string }) => (
-              <PostCard
-                key={post.id}
-                title={post.title}
-                content={post.content}
-                username=""
-                nickname=""
-              />
-            )
-          )}
+          {userPosts}
         </div>
       </div>
 
