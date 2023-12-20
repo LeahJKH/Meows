@@ -92,6 +92,14 @@ export function UserProfile() {
       document.body.classList.remove("dark-mode-body");
     };
   }, [darkMode]);
+let UsersNameLocal = sessionStorage.getItem("username")
+  let NameLocal =  sessionStorage.getItem("name")
+  let GenderLocal = sessionStorage.getItem("gender")
+  let UserPost = sessionStorage.getItem("Posts")
+
+  if (!sessionStorage.getItem("username")) {
+    location.href ="/LogIn"
+  }
 
   return (
     <div className={wholeUserProfileClass}>
@@ -101,7 +109,7 @@ export function UserProfile() {
             <input
               type="text"
               name="username"
-              value={username}
+              value={UsersNameLocal}
               onChange={handleInfoChange}
             />
           ) : (

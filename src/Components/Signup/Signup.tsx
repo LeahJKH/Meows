@@ -6,6 +6,7 @@ import { useTheme } from '../../ThemeContext';
 interface User {
   name: string;
   email: string;
+  Username: string
   password: string;
   Gender: string;
   Birthday: string; 
@@ -17,11 +18,19 @@ export default function Signup() {
   const [password, setPassword] = useState('');
   const [birthday, setBirthday] = useState('');
   const [gender, setGender] = useState('Male');
+  const [username, setUsername] = useState('');
   const [users, setUsers] = useState<User[]>(Array.isArray(usersData) ? (usersData as User[]) : []);
 
+  function logEm() {
+    location.href="/LogIn"
+  }
+  function sendToUser() {
+    location.href ="/Userprofile"
+  }
   const handleSignup = () => {
     const newUser: User = {
       name: name,
+      Username: username,
       email: email,
       password: password,
       Gender: gender,
@@ -33,6 +42,7 @@ export default function Signup() {
       setUsers(updatedUsers);
       console.log('New User:', newUser);
       console.log('All Users:', updatedUsers);
+      sendToUser()
     } else {
       console.log('Name, email, and password are required fields.');
     }
@@ -49,8 +59,11 @@ export default function Signup() {
     const SignContain = darkMode ? style.Signupcontainerdark : style.Signupcontainer;
     return (
         <>
+        <div className={style.FullLog}>
+        <div className={style.Placements}>
             <div className={SignContain}>
-            <input type="text" name="NameSignup" onChange={(e) => setName(e.target.value)} placeholder="Name" />
+            <input type="text" name="NameSignup" onChange={(e) => setName(e.target.value)} placeholder="Full Name" />
+            <input type="email" name="UsernameSignup" onChange={(e) => setUsername(e.target.value)} placeholder="Username"/>
             <input type="email" name="EmailSignup" onChange={(e) => setEmail(e.target.value)} placeholder="Email"/>
                 <input type="password" name="PassSignup" onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
                 <input type="text" name="Birthday" onChange={(e) => setBirthday(formatDate(e.target.value))} placeholder="Birthday (DD,MM,YYYY)" />
@@ -67,8 +80,10 @@ export default function Signup() {
             <div>
                 <div className={style.usercontainer}>
                     <p>have a user?</p>
-                    <button className={LogBtn}>loginn</button>
+                    <button className={LogBtn} onClick={logEm}>loginn</button>
                 </div>
+            </div>
+            </div>
             </div>
         </>
     );

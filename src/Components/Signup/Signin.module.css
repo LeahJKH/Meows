@@ -1,3 +1,10 @@
+.usercontainer{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 225px;
+    margin-top: 25px ;
+}
 .Signupcontainer {
 background-color: #F5F5FF;
     display: flex;
@@ -23,7 +30,11 @@ background-color: #F5F5FF;
     border: none;
 }
 .usercontainer{
-    margin:0;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 225px;
+    margin-top: 25px ;
 }
 .loginbtn{
     background: transparent;
@@ -39,6 +50,17 @@ background-color: #F5F5FF;
     width: 9vw;
     margin-right: 0.3vw;
 }
+.FullLog {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(44, 44, 45, 0.639);
+  }
+  .Placements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 /*!DARKMODE!*/
 .Signupcontainerdark {
     background-color: #5E646E;
