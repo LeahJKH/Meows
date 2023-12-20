@@ -31,6 +31,9 @@ export function LandingPage() {
       document.body.classList.remove("dark-mode-body");
     };
   }, [darkMode]);
+  const UsersNameLocal = sessionStorage.getItem("username")
+  const NameLocal =  sessionStorage.getItem("name")
+  
   return (
     <main className={styles.feedContainer}>
       <div className={styles.feedLeftContainer}>
@@ -38,8 +41,8 @@ export function LandingPage() {
           <div className={styles.imageNameContainer}>
             <img src="public/image-11.png" alt="image" />
             <div>
-              <p className={styles.userMail}>@intergalacticBaddie</p>
-              <h2 className={styles.userName}>Alicia</h2>
+              <p className={styles.userMail}>@{UsersNameLocal}</p>
+              <h2 className={styles.userName}>{NameLocal}</h2>
             </div>
           </div>
           <button className={styles.userButtons}>Following</button>
