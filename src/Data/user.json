@@ -6,7 +6,7 @@
       "password": "Meowformebbg",
       "Gender": "Female",
       "Birthday": "03,03,01",
-      "posts": [1, 14, 20]
+      "posts":[3, 17, 45]
     },
     {
       "name": "Leah",
@@ -15,7 +15,7 @@
       "password": "dobbelMeow",
       "Gender": "Female",
       "Birthday": "23,02,03",
-      "posts": [2, 5, 8]
+      "posts": [9, 22, 36]
     },
     {
       "name": "Admin",
@@ -24,16 +24,16 @@
       "password": "Admin",
       "Gender": "None",
       "Birthday": "01,01,01",
-      "posts": [3, 4, 16, 21]
+      "posts":[10, 28, 49]
     },
     {
-        "name": "Kai",
-        "username": "",
-        "email": "kai.kodehode@gmail.com",
-        "password": "Kodehode#23",
-        "Gender": "Male",
-        "Birthday": "31,03,85",
-        "posts": [18]
+      "name": "Kai",
+      "username": "",
+      "email": "kai.kodehode@gmail.com",
+      "password": "Kodehode#23",
+      "Gender": "Male",
+      "Birthday": "31,03,85",
+      "posts": [1, 19, 42]
       }, 
       {
         "name": "Jack",
@@ -41,7 +41,8 @@
         "email": "Jack@ciphermail.com",
         "password": "SecureCipher123",
         "gender": "Male",
-        "birthday": "14,09,95"
+        "birthday": "14,09,95",
+        "posts": [5, 14, 30]
       },
       {
         "name": "Emily",
@@ -49,7 +50,8 @@
         "email": "Emily@digitalwave.net",
         "password": "SecretCode@89",
         "gender": "Female",
-        "birthday": "08,12,88"
+        "birthday": "08,12,88",
+        "posts": [7, 26, 39]
       },
       {
         "name": "Rita Linn",
@@ -57,7 +59,8 @@
         "email": "Rita@digitalwave.net",
         "password": "JegErHyper!69420",
         "gender": "Female",
-        "birthday": "29,02,92"
+        "birthday": "29,02,92",
+        "posts": [2, 20, 48]
       },
       {
         "name": "Liam",
@@ -65,7 +68,8 @@
         "email": "Liam@quantummail.io",
         "password": "EntangledPassw0rd",
         "gender": "Male",
-        "birthday": "30,05,00"
+        "birthday": "30,05,00",
+        "posts": [2, 20, 48]
       },
       {
         "name": "Sophia",
@@ -73,7 +77,8 @@
         "email": "Sophia@geekymail.com",
         "password": "PixelPerfect21!",
         "gender": "Female",
-        "birthday": "17,11,96"
+        "birthday": "17,11,96",
+        "posts":[8, 25, 33]
       },
       {
         "name": "Oliver",
@@ -81,7 +86,8 @@
         "email": "Oliver@codemail.net",
         "password": "MasterCode123",
         "gender": "Male",
-        "birthday": "25,06,91"
+        "birthday": "25,06,91",
+        "posts": [12, 29, 44]
       },
       {
         "name": "Ava",
@@ -89,7 +95,8 @@
         "email": "Ava@digitechmail.com",
         "password": "WhizKid@23",
         "gender": "Female",
-        "birthday": "12,04,87"
+        "birthday": "12,04,87",
+        "posts": [6, 15, 31]
       },
       {
         "name": "Noah",
@@ -97,7 +104,8 @@
         "email": "Noah@ciphergen.net",
         "password": "GeniusData456",
         "gender": "Male",
-        "birthday": "19,08,94"
+        "birthday": "19,08,94",
+        "posts": [4, 21, 37]
       },
       {
         "name": "Emma",
@@ -105,7 +113,8 @@
         "email": "Emma@techwave.io",
         "password": "PrincessPixel789",
         "gender": "Female",
-        "birthday": "03,10,99"
+        "birthday": "03,10,99",
+        "posts": [11, 27, 41]
       },
       {
         "name": "William",
@@ -113,7 +122,8 @@
         "email": "William@codecraft.com",
         "password": "SavvyWilliam22",
         "gender": "Male",
-        "birthday": "28,12,92"
+        "birthday": "28,12,92",
+        "posts":[13, 24, 50]
       },
       {
         "name": "Sophie",
@@ -121,7 +131,8 @@
         "email": "Sophie@dreammail.net",
         "password": "Dreamer2023!",
         "gender": "Female",
-        "birthday": "15,02,97"
+        "birthday": "15,02,97",
+        "posts":[16, 32, 47]
       },
       {
         "name": "James",
@@ -129,7 +140,8 @@
         "email": "James@cipherbyte.com",
         "password": "WizardJames77",
         "gender": "Male",
-        "birthday": "07,11,89"
+        "birthday": "07,11,89",
+        "posts":[18, 34, 40]
       },
       {
         "name": "Charlotte",
@@ -137,7 +149,8 @@
         "email": "Charlotte@techqueen.io",
         "password": "QueenCode@22",
         "gender": "Female",
-        "birthday": "22,05,00"
+        "birthday": "22,05,00",
+        "posts": [23, 35, 43]
       },
       {
         "name": "Benjamin",
@@ -145,7 +158,8 @@
         "email": "Benjamin@datagenius.net",
         "password": "Maestro1234!",
         "gender": "Male",
-        "birthday": "09,03,96"
+        "birthday": "09,03,96",
+        "posts":[38, 46]
       },
       {
         "name": "Amelia",
@@ -258,6 +272,13 @@
         "password": "CoderTaylor!",
         "birthday": "14,09,94",
         "gender": "do not wish to enter"
+      },
+      {
+        "name": "LarsG",
+        "usernamr": "LG",
+        "email": "larsemann@gutt.no",
+        "birthday": "30,05,00",
+        "gender": "very much sane"
       }
   ]
   
