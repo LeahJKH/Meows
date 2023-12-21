@@ -25,7 +25,7 @@ export default function Login() {
           sessionStorage.setItem("Posts", user.posts)
           sessionStorage.setItem("username", user.username)
           sessionStorage.setItem("name", user.name)
-          sessionStorage.setItem("gender", user.Gender)
+          sessionStorage.setItem("Gender", user.Gender)
           setLoginError(false);
           sendToUser()
           return;

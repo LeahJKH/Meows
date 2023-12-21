@@ -29,7 +29,7 @@ export function Discover() {
   return (
     <div className={styles.discoverContainer}>
 
-      <h1 className={styles.discoverTitle}>DISCOVER</h1>
+      <h1>DISCOVER</h1>
 <div className={styles.topside}>
           <div className={styles.MeowBox}>
             <h3>TOP MEOW THIS WEEK</h3>

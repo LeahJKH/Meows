@@ -16,11 +16,12 @@ const Searchbar = ({ setSearchTerm }: SearchbarProps) => {
 
   const handleSearchClick = () => {
     setSearchTerm(searchValue);
-  }; //this makes so you can click the button and it searches
-
+  };
+  
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
-      setSearchTerm(searchValue);
+      const inputElement = e.target as HTMLInputElement;
+      setSearchTerm(inputElement.value);
     }
   }; //this makes so you can click the enter button on your keyboard and it searches
 
