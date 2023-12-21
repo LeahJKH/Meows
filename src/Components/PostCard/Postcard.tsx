@@ -4,15 +4,12 @@ import HeartSvg from "../../assets/Icons/Heart";
 import SavedSvg from "../../assets/Icons/Saved";
 import { useTheme } from "../../ThemeContext";
 type PostCardProps = {
+  id: number;
   title: string;
   content: string;
   username: string;
   nickname: string;
 };
-
-
-
-
 
 
 const PostCard: React.FC<PostCardProps> = ({
