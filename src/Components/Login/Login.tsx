@@ -22,7 +22,7 @@ export default function Login() {
       for (const user of userData) {//this goes through all the exsisting users 
         if (user.email === email && user.password === password) {//this checks if you have entered an exsisting user
           console.log("Logged in as:", user.name);
-          sessionStorage.setItem("Posts", user.posts)
+          sessionStorage.setItem("Posts", JSON.stringify(user.posts))
           sessionStorage.setItem("username", user.username)
           sessionStorage.setItem("name", user.name)
           sessionStorage.setItem("Gender", user.Gender)
