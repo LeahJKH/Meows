@@ -56,6 +56,7 @@ export function UserProfile() {
 
   useEffect(() => {
     // Load user information from local storage
+
     const storedUsername = localStorage.getItem("username");
     const storedNameGender = localStorage.getItem("nameGender");
 
@@ -92,6 +93,7 @@ export function UserProfile() {
       document.body.classList.remove("dark-mode-body");
     };
   }, [darkMode]);
+
 
   return (
     <div className={wholeUserProfileClass}>
@@ -148,6 +150,7 @@ export function UserProfile() {
       <div className={headerClass}>
         <h1>YOUR ACTIVITY</h1>
       </div>
+
       <div className={styles.userActivityFeed}>
         <PostCard
           username=""
@@ -160,7 +163,8 @@ export function UserProfile() {
     </div>
   );
 }
-/*
+
+ /*
 import { useEffect  } from "react";
 import PostCard from "../../Components/PostCard/Postcard";
 import styles from "./userProfile.module.css";
