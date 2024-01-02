@@ -7,7 +7,6 @@ import styles from "./LandingPage.module.css";
 import { Link } from "react-router-dom";
 import { useTheme } from "../ThemeContext";
 import MeowsHead from "../assets/Icons/meowshead.tsx";
-import { useLocation } from 'react-router-dom';
 import Searchbar from "../Components/srcbar/SrcBar.tsx";
 
 export default function LandingPage() {
@@ -15,9 +14,9 @@ export default function LandingPage() {
   const [searchTerm, setSearchTerm] = useState("");
   
 
-  const location = useLocation();
-  const { state } = location;
-  const filteredPosts = state && state.filteredPosts ? state.filteredPosts : [];
+
+ 
+
   const { darkMode } = useTheme();
   useEffect(() => {
     if (darkMode) {
@@ -156,13 +155,13 @@ export default function LandingPage() {
 
       <div className={styles.feedRightContainer}>
         <input
-          className={styles.feedRightInput}
+          className={feedRightInputClass}
           type="text"
           placeholder="Search Meows"
         />
 
-        <div className={styles.feedTrendsContainer}>
-          <div className={styles.feedTitleIconContainer}>
+        <div className={feedTrendsContainerClass}>
+          <div className={feedTitleIconContainerClass}>
             <h1>Paris Trend</h1>
             <img src="public/icon.svg" alt="icon" />
           </div>
@@ -170,59 +169,59 @@ export default function LandingPage() {
           <div className={styles.trendsContainer}>
             <div className={styles.trendBoks}>
               <div className={styles.trendingAndIcon}>
-                <p className={styles.grayText}>1. Trending</p>
+                <p className={grayTextClass}>1. Trending</p>
                 <img src="public/icon2.svg" alt="icon2" />
               </div>
-              <p className={styles.blueText}>#JessieMueller</p>
-              <p className={styles.grayText}>456K Tweets</p>
+              <p className={blueTextClass}>#JessieMueller</p>
+              <p className={grayTextClass}>456K Tweets</p>
             </div>
 
             <div className={styles.trendBoks}>
               <div className={styles.trendingAndIcon}>
-                <p className={styles.grayText}>2. Trending</p>
+                <p className={grayTextClass}>2. Trending</p>
                 <img src="public/icon2.svg" alt="icon2" />
               </div>
-              <p className={styles.blueText}>#ThelmaJones</p>
-              <p className={styles.grayText}>456K Tweets</p>
+              <p className={blueTextClass}>#ThelmaJones</p>
+              <p className={grayTextClass}>456K Tweets</p>
             </div>
 
             <div className={styles.trendBoks}>
               <div className={styles.trendingAndIcon}>
-                <p className={styles.grayText}>3. Trending</p>
+                <p className={grayTextClass}>3. Trending</p>
                 <img src="public/icon2.svg" alt="icon2" />
               </div>
-              <p className={styles.blueText}>#LoisPearson</p>
-              <p className={styles.grayText}>456K Tweets</p>
+              <p className={blueTextClass}>#LoisPearson</p>
+              <p className={grayTextClass}>456K Tweets</p>
             </div>
 
             <div className={styles.trendBoks}>
               <div className={styles.trendingAndIcon}>
-                <p className={styles.grayText}>4. Trending</p>
+                <p className={grayTextClass}>4. Trending</p>
                 <img src="public/icon2.svg" alt="icon2" />
               </div>
-              <p className={styles.blueText}>#WilmaBody</p>
-              <p className={styles.grayText}>456K Tweets</p>
+              <p className={blueTextClass}>#WilmaBody</p>
+              <p className={grayTextClass}>456K Tweets</p>
             </div>
 
             <div className={styles.trendBoks}>
               <div className={styles.trendingAndIcon}>
-                <p className={styles.grayText}>5. Trending</p>
+                <p className={grayTextClass}>5. Trending</p>
                 <img src="public/icon2.svg" alt="icon2" />
               </div>
-              <p className={styles.blueText}>#WilmaBody</p>
-              <p className={styles.grayText}>456K Tweets</p>
+              <p className={blueTextClass}>#WilmaBody</p>
+              <p className={grayTextClass}>456K Tweets</p>
             </div>
 
-            <div className={styles.trendBoks}>
+            <div className={trendBoxClass}>
               <div className={styles.trendingAndIcon}>
-                <p className={styles.grayText}>6. Trending</p>
+                <p className={grayTextClass}>6. Trending</p>
                 <img src="public/icon2.svg" alt="icon2" />
               </div>
-              <p className={styles.blueText}>#ErikBaker</p>
-              <p className={styles.grayText}>456K Tweets</p>
+              <p className={blueTextClass}>#ErikBaker</p>
+              <p className={grayTextClass}>456K Tweets</p>
             </div>
 
-            <button className={styles.showButton}>Show more</button>
+            <button className={showButtonClass}>Show more</button>
           </div>
         </div>
       </div>

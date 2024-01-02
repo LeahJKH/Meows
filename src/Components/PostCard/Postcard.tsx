@@ -4,7 +4,7 @@ import HeartSvg from "../../assets/Icons/Heart";
 import SavedSvg from "../../assets/Icons/Saved";
 import { useTheme } from "../../ThemeContext";
 type PostCardProps = {
-  id: number;
+  key: number;
   title: string;
   content: string;
   username: string;

@@ -6,10 +6,11 @@ import { useTheme } from '../../ThemeContext';
 interface User {
   name: string;
   email: string;
-  Username: string
+  Username: string;
   password: string;
   Gender: string;
-  Birthday: string; 
+  Birthday: string;
+  posts: number[];
 }
 
 export default function Signup() {
@@ -30,11 +31,12 @@ export default function Signup() {
   const handleSignup = () => {
     const newUser: User = {
       name: name,
-      Username: username,
+      Username: username, // Ensure it's 'Username' here
       email: email,
       password: password,
       Gender: gender,
       Birthday: birthday,
+      posts: [], // Include this if 'posts' is supposed to be part of the newUser object
     };// this is the setup for a new user so it uses less code too save a user
 
     if (name && email && password) {

@@ -1,10 +1,15 @@
 import styles from "./discoverPage.module.css";
 import PostCard from "../../Components/PostCard/Postcard";
 import { PostInfo } from "../../Data/posts";
+
 import FireSvg from "../../assets/Icons/Fire";
 import userData from '../../Data/user.json';
 import { useTheme } from '../../ThemeContext';
 import {  useEffect } from "react";
+
+
+
+
 export function Discover() {
   const users = userData.map(user => (
     <div className={styles.UserProfile} key={user.email}>
@@ -34,9 +39,10 @@ export function Discover() {
           <div className={styles.MeowBox}>
             <h3>TOP MEOW THIS WEEK</h3>
             <div className={styles.MeowContainer}>
-              <PostCard  {...PostInfo[1]}/> 
-              <PostCard {...PostInfo[3]}/>
-              <PostCard {...PostInfo[12]}/>
+              
+              <PostCard  {...PostInfo[1]} {...userData[3]} /> 
+              <PostCard {...PostInfo[3]}  {...userData[5]}/>
+              <PostCard {...PostInfo[12]}  {...userData[1]}/>
             </div>
           </div>  
          
