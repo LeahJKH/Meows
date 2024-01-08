@@ -6,7 +6,7 @@ import { useTheme } from '../../ThemeContext';
 interface User {
   name: string;
   email: string;
-  Username: string;
+  username: string;
   password: string;
   Gender: string;
   Birthday: string;
@@ -20,7 +20,7 @@ export default function Signup() {
   const [birthday, setBirthday] = useState('');
   const [gender, setGender] = useState('Male');
   const [username, setUsername] = useState('');
-  const [users, setUsers] = useState<User[]>(Array.isArray(usersData) ? (usersData as User[]) : []);
+  const [users, setUsers] = useState<User[]>(Array.isArray(usersData) ? usersData : []);
 
   function logEm() {
     location.href="/LogIn"
@@ -31,7 +31,7 @@ export default function Signup() {
   const handleSignup = () => {
     const newUser: User = {
       name: name,
-      Username: username, // Ensure it's 'Username' here
+      username: username, // Ensure it's 'Username' here
       email: email,
       password: password,
       Gender: gender,
