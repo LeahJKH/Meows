@@ -5,6 +5,7 @@ import { PostInfo } from "../../Data/posts";
 import { useTheme } from "../../ThemeContext";
 import EditSvg from "../../assets/Icons/Edit";
 import MoreSvg from "../../assets/Icons/More";
+import userData from "../../Data/user.json"
 
 export function UserProfile() {
   // State for darkMode theme
@@ -153,8 +154,8 @@ export function UserProfile() {
 
       <div className={styles.userActivityFeed}>
         <PostCard
-          username=""
-          nickname=""
+          username={userData[1].username}
+          name={userData[1].name}
           key={PostInfo[1].id}
           title={PostInfo[1].title}
           content={PostInfo[1].content}

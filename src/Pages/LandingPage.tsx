@@ -64,7 +64,7 @@ export default function LandingPage() {
             title={post.title}
             content={post.content}
             username={user.username}
-            nickname={user.name}
+            name={user.name}
           />
         );
       }
