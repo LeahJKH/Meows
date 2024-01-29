@@ -7,7 +7,7 @@ type PostCardProps = {
   title: string;
   content: string;
   username: string;
-  nickname: string;
+  name: string;
 };
 
 
@@ -15,7 +15,7 @@ const PostCard: React.FC<PostCardProps> = ({
   title,
   content,
   username,
-  nickname,
+ name,
   
 }) => {
   const { darkMode } = useTheme();
@@ -33,7 +33,7 @@ const PostCard: React.FC<PostCardProps> = ({
             alt="Pretty Alien makeup look"
           />
           <div className={styles.userInfo}>
-          <span className={styles.nickname} >{nickname}</span>
+          <span className={styles.nickname} >{name}</span>
             <span className={styles.username}>@{username}</span>
           </div>
         </div>
